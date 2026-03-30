@@ -17,7 +17,7 @@ html[dir="rtl"] .hero-grid {
 html[dir="rtl"] .mobile-nav {
   right: auto;
   left: -100%;
-  box-shadow: 10px 0 30px rgba(0,0,0,0.05);
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.05);
 }
 
 html[dir="rtl"] .mobile-nav.active {

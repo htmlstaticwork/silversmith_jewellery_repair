@@ -6,9 +6,9 @@ body.dark-mode {
   --text-primary: #e0e0e0;
   --text-secondary: #9e9e9e;
   --border-color: #333333;
-  
+
   /* Metallic Silver Accents adjusted for dark mode */
-  --accent-color: #a0a4aa; 
+  --accent-color: #a0a4aa;
   --accent-hover: #ffffff;
   --accent-light: #2c2f33;
   --accent-metallic: linear-gradient(135deg, #8b8f97 0%, #4a4a4a 50%, #8b8f97 100%);
@@ -40,22 +40,22 @@ body.dark-mode header {
 body.dark-mode .service-card {
   background-color: var(--surface-color);
   border-color: var(--border-color);
-  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 body.dark-mode .service-card:hover {
   border-color: var(--accent-color);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
 
 /* Ba-slider adjustments */
 body.dark-mode .ba-container {
-  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
 body.dark-mode .mobile-nav {
   background-color: var(--surface-color);
-  box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
 }
 
 body.dark-mode footer {

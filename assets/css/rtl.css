@@ -1,7 +1,5 @@
 /* RTL Styles for Arabic/Hebrew (Optional) */
-html[dir="rtl"] {
-  /* Typical flips for RTL designs */
-}
+
 
 html[dir="rtl"] .logo {
   flex-direction: row-reverse;

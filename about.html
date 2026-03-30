@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Silver</title>
-    
+
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/dark-mode.css">
-    <link rel="stylesheet" href="../assets/css/rtl.css">
-    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/dark-mode.css">
+    <link rel="stylesheet" href="/assets/css/rtl.css">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
 
     <style>
         .about-grid {
@@ -24,14 +25,14 @@
         .about-image {
             position: relative;
         }
-        
+
         .about-image img {
             border-radius: var(--border-radius);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             position: relative;
             z-index: 2;
         }
-        
+
         .about-image::before {
             content: '';
             position: absolute;
@@ -47,7 +48,7 @@
         body.dark-mode .about-image::before {
             border-color: var(--border-color);
         }
-        
+
         @media (max-width: 768px) {
             .about-grid {
                 grid-template-columns: 1fr;
@@ -55,6 +56,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header Navigation -->
@@ -64,7 +66,7 @@
                 <i data-lucide="gem" class="logo-icon"></i>
                 <a href="index.html">Silver</a>
             </div>
-            
+
             <nav class="nav-links">
 
                 <div class="dropdown">
@@ -76,7 +78,8 @@
                 </div>
                 <a href="services.html">Services</a>
                 <div class="dropdown">
-                    <a href="custom-jewelry.html">Custom Design <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></a>
+                    <a href="custom-jewelry.html">Custom Design <i data-lucide="chevron-down"
+                            style="width: 16px; height: 16px;"></i></a>
                     <div class="dropdown-content">
                         <a href="portfolio.html">Portfolio</a>
                         <a href="testimonials.html">Testimonials</a>
@@ -85,7 +88,7 @@
                 <a href="about.html" class="active">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            
+
             <div class="nav-actions">
                 <button class="rtl-toggle" aria-label="Toggle RTL Layout">
                     <i data-lucide="languages"></i>
@@ -96,8 +99,8 @@
                 <a href="login.html" class="btn btn-outline btn-sm">Login</a>
                 <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
             </div>
-            
-             <button class="mobile-menu-btn" aria-label="Menu">
+
+            <button class="mobile-menu-btn" aria-label="Menu">
                 <i data-lucide="menu"></i>
             </button>
         </div>
@@ -110,94 +113,119 @@
         </button>
         <div class="mobile-nav-links">
             <div class="mobile-nav-item">
-                <a href="#" class="mobile-nav-toggle">Home <i data-lucide="chevron-down" class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
+                <a href="#" class="mobile-nav-toggle">Home <i data-lucide="chevron-down" class="mobile-nav-toggle-icon"
+                        style="width: 16px; height: 16px;"></i></a>
                 <div class="mobile-nav-submenu">
                     <a href="index.html">Home 1 (Classic)</a>
                     <a href="index-2.html">Home 2 (Premium)</a>
                 </div>
             </div>
-            
+
             <a href="services.html">Services</a>
-            
+
             <div class="mobile-nav-item">
-                <a href="#" class="mobile-nav-toggle">Custom Design <i data-lucide="chevron-down" class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
+                <a href="#" class="mobile-nav-toggle">Custom Design <i data-lucide="chevron-down"
+                        class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
                 <div class="mobile-nav-submenu">
                     <a href="portfolio.html">Portfolio</a>
                     <a href="testimonials.html">Testimonials</a>
                 </div>
             </div>
-            
+
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
-        
+
         <div class="mobile-nav-footer">
-            <a href="login.html" class="btn btn-outline" style="width: 100%; justify-content: center; display: flex;">Login</a>
-            <a href="signup.html" class="btn btn-primary" style="width: 100%; justify-content: center; display: flex;">Sign Up</a>
+            <a href="login.html" class="btn btn-outline"
+                style="width: 100%; justify-content: center; display: flex;">Login</a>
+            <a href="signup.html" class="btn btn-primary"
+                style="width: 100%; justify-content: center; display: flex;">Sign Up</a>
         </div>
     </div>
 
     <main>
         <!-- Page Header -->
-        <section class="section" style="padding: 150px 0 50px; background-color: var(--surface-color); text-align: center; border-bottom: 1px solid var(--border-color);">
+        <section class="section"
+            style="padding: 150px 0 50px; background-color: var(--surface-color); text-align: center; border-bottom: 1px solid var(--border-color);">
             <div class="container">
                 <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">The Artisan's Journey</h1>
-                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Dedicated to preserving the heritage of traditional silversmithing through unparalleled craftsmanship.</p>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Dedicated to preserving the heritage
+                    of traditional silversmithing through unparalleled craftsmanship.</p>
             </div>
         </section>
 
         <!-- Story Section -->
         <section class="section">
             <div class="container about-grid">
-                
+
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1577908331566-6ec423d249f3?auto=format&fit=crop&q=80&w=800" alt="Master Silversmith Working">
+                    <img src="https://images.unsplash.com/photo-1577908331566-6ec423d249f3?auto=format&fit=crop&q=80&w=800"
+                        alt="Master Silversmith Working">
                 </div>
 
                 <div>
                     <span class="section-subtitle">Our Heritage</span>
                     <h2>A legacy forged in silver and passion.</h2>
-                    <p>With over two decades spent mastering the art of the forge, anvil, and polishing wheel, our founder established the workshop to bring meticulous repair standards to cherished heirlooms.</p>
-                    <p>What began as a fascination with how heat and hammer can manipulate raw, dull metal into brilliant jewelry evolved into a life's pursuit. We believe that jewelry is more than an accessory—it is an artifact of family history, personal milestones, and sentimental value.</p>
-                    <p>Whether restoring a battered vintage locket or casting a brand-new signet ring from a sketch, the focus remains the same: uncompromising quality and a commitment to doing things the right way, by hand.</p>
-                    
+                    <p>With over two decades spent mastering the art of the forge, anvil, and polishing wheel, our
+                        founder established the workshop to bring meticulous repair standards to cherished heirlooms.
+                    </p>
+                    <p>What began as a fascination with how heat and hammer can manipulate raw, dull metal into
+                        brilliant jewelry evolved into a life's pursuit. We believe that jewelry is more than an
+                        accessory—it is an artifact of family history, personal milestones, and sentimental value.</p>
+                    <p>Whether restoring a battered vintage locket or casting a brand-new signet ring from a sketch, the
+                        focus remains the same: uncompromising quality and a commitment to doing things the right way,
+                        by hand.</p>
+
                     <div style="margin-top: 2rem; display: flex; gap: 2rem;">
                         <div>
-                            <h3 style="font-family: var(--font-body); font-size: 2.5rem; color: var(--accent-color); margin-bottom: 0;">20+</h3>
-                            <p style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 1px;">Years Experience</p>
+                            <h3
+                                style="font-family: var(--font-body); font-size: 2.5rem; color: var(--accent-color); margin-bottom: 0;">
+                                20+</h3>
+                            <p style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 1px;">Years
+                                Experience</p>
                         </div>
                         <div>
-                            <h3 style="font-family: var(--font-body); font-size: 2.5rem; color: var(--accent-color); margin-bottom: 0;">5k+</h3>
-                            <p style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 1px;">Pieces Restored</p>
+                            <h3
+                                style="font-family: var(--font-body); font-size: 2.5rem; color: var(--accent-color); margin-bottom: 0;">
+                                5k+</h3>
+                            <p style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 1px;">Pieces
+                                Restored</p>
                         </div>
                     </div>
                 </div>
 
             </div>
         </section>
-        
+
         <!-- Craftsmanship Philosophy Section -->
-        <section class="section" style="background-color: var(--surface-color); text-align: center; border-top: 1px solid var(--border-color);">
+        <section class="section"
+            style="background-color: var(--surface-color); text-align: center; border-top: 1px solid var(--border-color);">
             <div class="container">
                 <span class="section-subtitle">Our Promise</span>
                 <h2 class="section-title">The Philosophy of Craftsmanship</h2>
-                <p style="max-width: 800px; margin: 0 auto 3rem; font-size: 1.125rem;">We pledge to treat every piece that enters our workshop not merely as an object, but as a priceless memory entrusted to our care.</p>
-                
+                <p style="max-width: 800px; margin: 0 auto 3rem; font-size: 1.125rem;">We pledge to treat every piece
+                    that enters our workshop not merely as an object, but as a priceless memory entrusted to our care.
+                </p>
+
                 <div class="services-grid" style="text-align: left;">
                     <div class="service-card" style="box-shadow: none; border-color: transparent; text-align: center;">
                         <div class="service-icon"><i data-lucide="shield"></i></div>
                         <h3>Integrity</h3>
-                        <p>We use only the finest, responsibly sourced silver and employ techniques that strengthen rather than weaken your jewelry.</p>
+                        <p>We use only the finest, responsibly sourced silver and employ techniques that strengthen
+                            rather than weaken your jewelry.</p>
                     </div>
                     <div class="service-card" style="box-shadow: none; border-color: transparent; text-align: center;">
                         <div class="service-icon"><i data-lucide="eye"></i></div>
                         <h3>Precision</h3>
-                        <p>Our repairs are executed precisely under magnification so they remain invisible to the naked eye.</p>
+                        <p>Our repairs are executed precisely under magnification so they remain invisible to the naked
+                            eye.</p>
                     </div>
                     <div class="service-card" style="box-shadow: none; border-color: transparent; text-align: center;">
                         <div class="service-icon"><i data-lucide="heart"></i></div>
                         <h3>Trust</h3>
-                        <p>Your heirlooms are securely stored and comprehensively insured while in our workshop. You can have peace of mind.</p>
+                        <p>Your heirlooms are securely stored and comprehensively insured while in our workshop. You can
+                            have peace of mind.</p>
                     </div>
                 </div>
             </div>
@@ -214,13 +242,14 @@
                         <i data-lucide="gem" class="logo-icon"></i>
                         <a href="index.html">Silver</a>
                     </div>
-                    <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty and integrity of your finest silver jewelry with expert craftsmanship.</p>
+                    <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty
+                        and integrity of your finest silver jewelry with expert craftsmanship.</p>
                     <div style="display: flex; gap: 1rem;">
                         <a href="#" aria-label="Instagram" style="color: #fff;"><i data-lucide="instagram"></i></a>
                         <a href="#" aria-label="Facebook" style="color: #fff;"><i data-lucide="facebook"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul>
@@ -230,7 +259,7 @@
                         <li><a href="custom-jewelry.html">Custom Design</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Company</h3>
                     <ul>
@@ -239,18 +268,26 @@
                         <li><a href="testimonials.html">Testimonials</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Contact</h3>
                     <ul>
-                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square" style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a Message</a></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1 (555) 123-4567</span></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>hello@silversmith.com</span></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123 Artisan Ave,<br>Workshop District</span></li>
+                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square"
+                                style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a
+                                Message</a></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1
+                                (555) 123-4567</span></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i>
+                            <span>hello@silversmith.com</span></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123
+                                Artisan Ave,<br>Workshop District</span></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Silver. All Rights Reserved.</p>
                 <div>
@@ -271,4 +308,5 @@
     <script>lucide.createIcons();</script>
     <script src="../assets/js/main.js"></script>
 </body>
+
 </html>

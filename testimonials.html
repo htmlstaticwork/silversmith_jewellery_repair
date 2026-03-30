@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonials | Silver</title>
-    
+
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/dark-mode.css">
-    <link rel="stylesheet" href="../assets/css/rtl.css">
-    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/dark-mode.css">
+    <link rel="stylesheet" href="/assets/css/rtl.css">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
 
     <style>
         .testimonials-grid {
@@ -27,7 +28,7 @@
             border: 1px solid var(--border-color);
             position: relative;
         }
-        
+
         .testimonial-card .quote-icon {
             position: absolute;
             top: 2rem;
@@ -37,7 +38,7 @@
             width: 48px;
             height: 48px;
         }
-        
+
         .testimonial-card p {
             font-size: 1.125rem;
             font-style: italic;
@@ -45,36 +46,37 @@
             position: relative;
             z-index: 2;
         }
-        
+
         .testimonial-author {
             display: flex;
             align-items: center;
             gap: 1rem;
         }
-        
+
         .testimonial-author img {
             width: 50px;
             height: 50px;
             border-radius: 50%;
             object-fit: cover;
         }
-        
+
         .testimonial-author h4 {
             margin-bottom: 0;
             font-family: var(--font-body);
             font-size: 1rem;
         }
-        
+
         .testimonial-author span {
             font-size: 0.875rem;
             color: var(--accent-color);
         }
-        
+
         .stars {
             color: #fbbf24;
             display: flex;
             margin-bottom: 1rem;
         }
+
         .stars i {
             width: 16px;
             height: 16px;
@@ -82,6 +84,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header Navigation -->
@@ -91,7 +94,7 @@
                 <i data-lucide="gem" class="logo-icon"></i>
                 <a href="index.html">Silver</a>
             </div>
-            
+
             <nav class="nav-links">
 
                 <div class="dropdown">
@@ -103,7 +106,8 @@
                 </div>
                 <a href="services.html">Services</a>
                 <div class="dropdown">
-                    <a href="custom-jewelry.html" class="active">Custom Design <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></a>
+                    <a href="custom-jewelry.html" class="active">Custom Design <i data-lucide="chevron-down"
+                            style="width: 16px; height: 16px;"></i></a>
                     <div class="dropdown-content">
                         <a href="portfolio.html">Portfolio</a>
                         <a href="testimonials.html">Testimonials</a>
@@ -112,7 +116,7 @@
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            
+
             <div class="nav-actions">
                 <button class="rtl-toggle" aria-label="Toggle RTL Layout">
                     <i data-lucide="languages"></i>
@@ -123,8 +127,8 @@
                 <a href="login.html" class="btn btn-outline btn-sm">Login</a>
                 <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
             </div>
-            
-             <button class="mobile-menu-btn" aria-label="Menu">
+
+            <button class="mobile-menu-btn" aria-label="Menu">
                 <i data-lucide="menu"></i>
             </button>
         </div>
@@ -137,52 +141,61 @@
         </button>
         <div class="mobile-nav-links">
             <div class="mobile-nav-item">
-                <a href="#" class="mobile-nav-toggle">Home <i data-lucide="chevron-down" class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
+                <a href="#" class="mobile-nav-toggle">Home <i data-lucide="chevron-down" class="mobile-nav-toggle-icon"
+                        style="width: 16px; height: 16px;"></i></a>
                 <div class="mobile-nav-submenu">
                     <a href="index.html">Home 1 (Classic)</a>
                     <a href="index-2.html">Home 2 (Premium)</a>
                 </div>
             </div>
-            
+
             <a href="services.html">Services</a>
-            
+
             <div class="mobile-nav-item">
-                <a href="#" class="mobile-nav-toggle">Custom Design <i data-lucide="chevron-down" class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
+                <a href="#" class="mobile-nav-toggle">Custom Design <i data-lucide="chevron-down"
+                        class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
                 <div class="mobile-nav-submenu">
                     <a href="portfolio.html">Portfolio</a>
                     <a href="testimonials.html">Testimonials</a>
                 </div>
             </div>
-            
+
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
-        
+
         <div class="mobile-nav-footer">
-            <a href="login.html" class="btn btn-outline" style="width: 100%; justify-content: center; display: flex;">Login</a>
-            <a href="signup.html" class="btn btn-primary" style="width: 100%; justify-content: center; display: flex;">Sign Up</a>
+            <a href="login.html" class="btn btn-outline"
+                style="width: 100%; justify-content: center; display: flex;">Login</a>
+            <a href="signup.html" class="btn btn-primary"
+                style="width: 100%; justify-content: center; display: flex;">Sign Up</a>
         </div>
     </div>
 
     <main>
         <!-- Page Header -->
-        <section class="section" style="padding: 150px 0 50px; background-color: var(--surface-color); text-align: center; border-bottom: 1px solid var(--border-color);">
+        <section class="section"
+            style="padding: 150px 0 50px; background-color: var(--surface-color); text-align: center; border-bottom: 1px solid var(--border-color);">
             <div class="container">
                 <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Client Stories</h1>
-                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Don't just take our word for it. Read what our clients say about entrusting us with their most valuable jewelry.</p>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Don't just take our word for it. Read
+                    what our clients say about entrusting us with their most valuable jewelry.</p>
             </div>
         </section>
 
         <!-- Testimonials Section -->
         <section class="section">
             <div class="container testimonials-grid">
-                
+
                 <div class="testimonial-card">
                     <i data-lucide="quote" class="quote-icon"></i>
                     <div class="stars">
-                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
+                            data-lucide="star"></i><i data-lucide="star"></i>
                     </div>
-                    <p>"I brought in my grandmother's tarnished and broken silver locket. honestly, I thought it was ruined. When I picked it up, I cried. It looked exactly as I remembered it from my childhood. The repair is completely invisible."</p>
+                    <p>"I brought in my grandmother's tarnished and broken silver locket. honestly, I thought it was
+                        ruined. When I picked it up, I cried. It looked exactly as I remembered it from my childhood.
+                        The repair is completely invisible."</p>
                     <div class="testimonial-author">
                         <div>
                             <h4>Eleanor V.</h4>
@@ -194,9 +207,12 @@
                 <div class="testimonial-card">
                     <i data-lucide="quote" class="quote-icon"></i>
                     <div class="stars">
-                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
+                            data-lucide="star"></i><i data-lucide="star"></i>
                     </div>
-                    <p>"I wanted a custom silver signet ring with my family crest. The process from sketch to the final piece was incredible and deeply personal. The weight and the polished finish of the ring feel so premium. Worth every penny."</p>
+                    <p>"I wanted a custom silver signet ring with my family crest. The process from sketch to the final
+                        piece was incredible and deeply personal. The weight and the polished finish of the ring feel so
+                        premium. Worth every penny."</p>
                     <div class="testimonial-author">
                         <div>
                             <h4>James M.</h4>
@@ -208,9 +224,12 @@
                 <div class="testimonial-card">
                     <i data-lucide="quote" class="quote-icon"></i>
                     <div class="stars">
-                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
+                            data-lucide="star"></i><i data-lucide="star"></i>
                     </div>
-                    <p>"My favorite silver chain snapped and the clasp broke. I brought it here after another jeweler said they couldn't solder it without making it stiff. They fixed it beautifully and it moves perfectly. Excellent craftsmanship."</p>
+                    <p>"My favorite silver chain snapped and the clasp broke. I brought it here after another jeweler
+                        said they couldn't solder it without making it stiff. They fixed it beautifully and it moves
+                        perfectly. Excellent craftsmanship."</p>
                     <div class="testimonial-author">
                         <div>
                             <h4>Sarah L.</h4>
@@ -222,9 +241,11 @@
                 <div class="testimonial-card">
                     <i data-lucide="quote" class="quote-icon"></i>
                     <div class="stars">
-                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
+                            data-lucide="star"></i><i data-lucide="star"></i>
                     </div>
-                    <p>"They expertly resized my silver engagement ring down two sizes. There is no line, no weakness in the band. It's like magic. And they polished it up so it looks brand new!"</p>
+                    <p>"They expertly resized my silver engagement ring down two sizes. There is no line, no weakness in
+                        the band. It's like magic. And they polished it up so it looks brand new!"</p>
                     <div class="testimonial-author">
                         <div>
                             <h4>Jessica T.</h4>
@@ -235,12 +256,14 @@
 
             </div>
         </section>
-        
+
         <!-- CTA Section -->
         <section class="section" style="background: var(--text-primary); color: var(--bg-color); text-align: center;">
             <div class="container">
-                <h2 style="color: var(--bg-color); font-size: 2.5rem; margin-bottom: 1rem;">Experience the Quality Yourself</h2>
-                <a href="contact.html" class="btn" style="background: var(--bg-color); color: var(--text-primary); margin-top: 1rem;">Get in Touch</a>
+                <h2 style="color: var(--bg-color); font-size: 2.5rem; margin-bottom: 1rem;">Experience the Quality
+                    Yourself</h2>
+                <a href="contact.html" class="btn"
+                    style="background: var(--bg-color); color: var(--text-primary); margin-top: 1rem;">Get in Touch</a>
             </div>
         </section>
 
@@ -255,13 +278,14 @@
                         <i data-lucide="gem" class="logo-icon"></i>
                         <a href="index.html">Silver</a>
                     </div>
-                    <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty and integrity of your finest silver jewelry with expert craftsmanship.</p>
+                    <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty
+                        and integrity of your finest silver jewelry with expert craftsmanship.</p>
                     <div style="display: flex; gap: 1rem;">
                         <a href="#" aria-label="Instagram" style="color: #fff;"><i data-lucide="instagram"></i></a>
                         <a href="#" aria-label="Facebook" style="color: #fff;"><i data-lucide="facebook"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul>
@@ -271,7 +295,7 @@
                         <li><a href="custom-jewelry.html">Custom Design</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Company</h3>
                     <ul>
@@ -280,18 +304,26 @@
                         <li><a href="testimonials.html">Testimonials</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Contact</h3>
                     <ul>
-                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square" style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a Message</a></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1 (555) 123-4567</span></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>hello@silversmith.com</span></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123 Artisan Ave,<br>Workshop District</span></li>
+                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square"
+                                style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a
+                                Message</a></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1
+                                (555) 123-4567</span></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i>
+                            <span>hello@silversmith.com</span></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123
+                                Artisan Ave,<br>Workshop District</span></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Silver. All Rights Reserved.</p>
                 <div>
@@ -312,4 +344,5 @@
     <script>lucide.createIcons();</script>
     <script src="../assets/js/main.js"></script>
 </body>
+
 </html>

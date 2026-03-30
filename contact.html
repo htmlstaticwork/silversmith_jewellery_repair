@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact & Quote | Silver</title>
-    
+
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/dark-mode.css">
-    <link rel="stylesheet" href="../assets/css/rtl.css">
-    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/dark-mode.css">
+    <link rel="stylesheet" href="/assets/css/rtl.css">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
 
     <style>
         .contact-grid {
@@ -34,7 +35,7 @@
             gap: 1.5rem;
             margin-bottom: 2rem;
         }
-        
+
         .contact-method i {
             color: var(--accent-light);
             width: 24px;
@@ -65,7 +66,8 @@
             color: var(--text-secondary);
         }
 
-        .form-input, .form-textarea {
+        .form-input,
+        .form-textarea {
             width: 100%;
             padding: 1rem;
             border: 1px solid var(--border-color);
@@ -75,8 +77,9 @@
             font-family: var(--font-body);
             transition: border-color var(--transition-fast);
         }
-        
-        .form-input:focus, .form-textarea:focus {
+
+        .form-input:focus,
+        .form-textarea:focus {
             outline: none;
             border-color: var(--text-primary);
         }
@@ -85,7 +88,7 @@
             resize: vertical;
             min-height: 150px;
         }
-        
+
         /* Map Container */
         .map-section {
             width: 100%;
@@ -95,7 +98,7 @@
             border-radius: var(--border-radius);
             overflow: hidden;
         }
-        
+
         @media (max-width: 992px) {
             .contact-grid {
                 grid-template-columns: 1fr;
@@ -103,6 +106,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header Navigation -->
@@ -112,7 +116,7 @@
                 <i data-lucide="gem" class="logo-icon"></i>
                 <a href="index.html">Silver</a>
             </div>
-            
+
             <nav class="nav-links">
 
                 <div class="dropdown">
@@ -124,7 +128,8 @@
                 </div>
                 <a href="services.html">Services</a>
                 <div class="dropdown">
-                    <a href="custom-jewelry.html">Custom Design <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></a>
+                    <a href="custom-jewelry.html">Custom Design <i data-lucide="chevron-down"
+                            style="width: 16px; height: 16px;"></i></a>
                     <div class="dropdown-content">
                         <a href="portfolio.html">Portfolio</a>
                         <a href="testimonials.html">Testimonials</a>
@@ -133,7 +138,7 @@
                 <a href="about.html">About</a>
                 <a href="contact.html" class="active">Contact</a>
             </nav>
-            
+
             <div class="nav-actions">
                 <button class="rtl-toggle" aria-label="Toggle RTL Layout">
                     <i data-lucide="languages"></i>
@@ -144,8 +149,8 @@
                 <a href="login.html" class="btn btn-outline btn-sm">Login</a>
                 <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
             </div>
-            
-             <button class="mobile-menu-btn" aria-label="Menu">
+
+            <button class="mobile-menu-btn" aria-label="Menu">
                 <i data-lucide="menu"></i>
             </button>
         </div>
@@ -158,52 +163,58 @@
         </button>
         <div class="mobile-nav-links">
             <div class="mobile-nav-item">
-                <a href="#" class="mobile-nav-toggle">Home <i data-lucide="chevron-down" class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
+                <a href="#" class="mobile-nav-toggle">Home <i data-lucide="chevron-down" class="mobile-nav-toggle-icon"
+                        style="width: 16px; height: 16px;"></i></a>
                 <div class="mobile-nav-submenu">
                     <a href="index.html">Home 1 (Classic)</a>
                     <a href="index-2.html">Home 2 (Premium)</a>
                 </div>
             </div>
-            
+
             <a href="services.html">Services</a>
-            
+
             <div class="mobile-nav-item">
-                <a href="#" class="mobile-nav-toggle">Custom Design <i data-lucide="chevron-down" class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
+                <a href="#" class="mobile-nav-toggle">Custom Design <i data-lucide="chevron-down"
+                        class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
                 <div class="mobile-nav-submenu">
                     <a href="portfolio.html">Portfolio</a>
                     <a href="testimonials.html">Testimonials</a>
                 </div>
             </div>
-            
+
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
-        
+
         <div class="mobile-nav-footer">
-            <a href="login.html" class="btn btn-outline" style="width: 100%; justify-content: center; display: flex;">Login</a>
-            <a href="signup.html" class="btn btn-primary" style="width: 100%; justify-content: center; display: flex;">Sign Up</a>
+            <a href="login.html" class="btn btn-outline"
+                style="width: 100%; justify-content: center; display: flex;">Login</a>
+            <a href="signup.html" class="btn btn-primary"
+                style="width: 100%; justify-content: center; display: flex;">Sign Up</a>
         </div>
     </div>
 
     <main>
         <!-- Page Header -->
-        <section class="section" style="padding: 150px 0 50px; background-color: var(--surface-color); text-align: center; border-bottom: 1px solid var(--border-color);">
+        <section class="section"
+            style="padding: 150px 0 50px; background-color: var(--surface-color); text-align: center; border-bottom: 1px solid var(--border-color);">
             <div class="container">
                 <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Let's Connect</h1>
-                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Inquire about a jewelry repair, request a polishing quote, or start your custom design journey.</p>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Inquire about a jewelry repair,
+                    request a polishing quote, or start your custom design journey.</p>
             </div>
         </section>
 
         <!-- Contact Form & Info -->
         <section class="section">
             <div class="container">
-                
+
                 <div class="contact-grid">
-                    
+
                     <!-- Info Col -->
                     <div class="contact-info">
                         <h2 style="font-size: 2rem; margin-bottom: 2rem;">Workshop Info</h2>
-                        
+
                         <div class="contact-method">
                             <i data-lucide="map-pin"></i>
                             <div>
@@ -216,7 +227,9 @@
                             <i data-lucide="phone"></i>
                             <div>
                                 <h4 style="margin-bottom: 0.25rem;">Phone & WhatsApp</h4>
-                                <p style="margin-bottom: 0;">+1 (555) 123-4567<br><span style="font-size: 0.875rem; color: #25d366; font-weight: 500;">Available on WhatsApp</span></p>
+                                <p style="margin-bottom: 0;">+1 (555) 123-4567<br><span
+                                        style="font-size: 0.875rem; color: #25d366; font-weight: 500;">Available on
+                                        WhatsApp</span></p>
                             </div>
                         </div>
 
@@ -232,7 +245,8 @@
                             <i data-lucide="clock"></i>
                             <div>
                                 <h4 style="margin-bottom: 0.25rem;">Working Hours</h4>
-                                <p style="margin-bottom: 0;">Monday-Friday: 10am - 6pm<br>Saturday: By Appointment (Custom Only)</p>
+                                <p style="margin-bottom: 0;">Monday-Friday: 10am - 6pm<br>Saturday: By Appointment
+                                    (Custom Only)</p>
                             </div>
                         </div>
                     </div>
@@ -240,22 +254,25 @@
                     <!-- Form Col -->
                     <div>
                         <h2 style="font-size: 2rem; margin-bottom: 2rem;">Send An Inquiry</h2>
-                        
+
                         <form class="contact-form" action="#" method="POST">
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                                 <div class="form-group">
                                     <label class="form-label" for="fname">First Name</label>
-                                    <input type="text" id="fname" class="form-input" placeholder="Enter your first name" required>
+                                    <input type="text" id="fname" class="form-input" placeholder="Enter your first name"
+                                        required>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label" for="lname">Last Name</label>
-                                    <input type="text" id="lname" class="form-input" placeholder="Enter your last name" required>
+                                    <input type="text" id="lname" class="form-input" placeholder="Enter your last name"
+                                        required>
                                 </div>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label class="form-label" for="email">Email Address</label>
-                                <input type="email" id="email" class="form-input" placeholder="you@example.com" required>
+                                <input type="email" id="email" class="form-input" placeholder="you@example.com"
+                                    required>
                             </div>
 
                             <div class="form-group">
@@ -268,17 +285,21 @@
                                     <option value="other">Other / General Inquiry</option>
                                 </select>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label class="form-label" for="message">Message Details</label>
-                                <textarea id="message" class="form-textarea" placeholder="Describe the condition of your jewelry or what you'd like to create..." required></textarea>
+                                <textarea id="message" class="form-textarea"
+                                    placeholder="Describe the condition of your jewelry or what you'd like to create..."
+                                    required></textarea>
                             </div>
-                            
+
                             <p style="font-size: 0.875rem; color: var(--text-secondary); margin-top: -0.5rem;">
-                                * For repair quotes, we will ask you to supply a photo via email once we receive this message.
+                                * For repair quotes, we will ask you to supply a photo via email once we receive this
+                                message.
                             </p>
-                            
-                            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Inquiry</button>
+
+                            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send
+                                Inquiry</button>
                         </form>
                     </div>
 
@@ -287,7 +308,10 @@
                 <!-- Google Maps Embed -->
                 <div class="map-section">
                     <!-- Replace generic iframe with an actual Google Maps embed iframe representing a luxury location in NY -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528000654!2d-74.11976326177587!3d40.697663748658046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1683401768461!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528000654!2d-74.11976326177587!3d40.697663748658046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1683401768461!5m2!1sen!2sus"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
             </div>
@@ -304,13 +328,14 @@
                         <i data-lucide="gem" class="logo-icon"></i>
                         <a href="index.html">Silver</a>
                     </div>
-                    <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty and integrity of your finest silver jewelry with expert craftsmanship.</p>
+                    <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty
+                        and integrity of your finest silver jewelry with expert craftsmanship.</p>
                     <div style="display: flex; gap: 1rem;">
                         <a href="#" aria-label="Instagram" style="color: #fff;"><i data-lucide="instagram"></i></a>
                         <a href="#" aria-label="Facebook" style="color: #fff;"><i data-lucide="facebook"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul>
@@ -320,7 +345,7 @@
                         <li><a href="custom-jewelry.html">Custom Design</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Company</h3>
                     <ul>
@@ -329,18 +354,26 @@
                         <li><a href="testimonials.html">Testimonials</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Contact</h3>
                     <ul>
-                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square" style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a Message</a></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1 (555) 123-4567</span></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>hello@silversmith.com</span></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123 Artisan Ave,<br>Workshop District</span></li>
+                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square"
+                                style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a
+                                Message</a></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1
+                                (555) 123-4567</span></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i>
+                            <span>hello@silversmith.com</span></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123
+                                Artisan Ave,<br>Workshop District</span></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Silver. All Rights Reserved.</p>
                 <div>
@@ -353,7 +386,11 @@
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/15551234567" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+            <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+        </svg>
     </a>
 
     <!-- Scroll to Top Button -->
@@ -366,4 +403,5 @@
     <script>lucide.createIcons();</script>
     <script src="../assets/js/main.js"></script>
 </body>
+
 </html>

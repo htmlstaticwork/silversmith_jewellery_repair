@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Silver</title>
-    
+
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/dark-mode.css">
-    <link rel="stylesheet" href="../assets/css/rtl.css">
-    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/dark-mode.css">
+    <link rel="stylesheet" href="/assets/css/rtl.css">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
 
     <style>
         .page-header {
@@ -20,7 +21,7 @@
             text-align: center;
             border-bottom: 1px solid var(--border-color);
         }
-        
+
         .service-detail {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -30,29 +31,31 @@
         }
 
         .service-detail:nth-child(even) {
-            direction: rtl; /* reverse order for even rows */
+            direction: rtl;
+            /* reverse order for even rows */
         }
-        
-        .service-detail:nth-child(even) > div {
-            direction: ltr; /* keep text normal */
+
+        .service-detail:nth-child(even)>div {
+            direction: ltr;
+            /* keep text normal */
         }
-        
+
         .service-content h2 {
             font-size: 2rem;
             margin-bottom: 1rem;
         }
-        
+
         .service-content ul {
             margin-top: 1.5rem;
         }
-        
+
         .service-content ul li {
             position: relative;
             padding-left: 24px;
             margin-bottom: 0.75rem;
             color: var(--text-secondary);
         }
-        
+
         .service-content ul li::before {
             content: '✓';
             position: absolute;
@@ -60,9 +63,11 @@
             color: var(--accent-color);
             font-weight: bold;
         }
-        
+
         @media (max-width: 768px) {
-            .service-detail, .service-detail:nth-child(even) {
+
+            .service-detail,
+            .service-detail:nth-child(even) {
                 grid-template-columns: 1fr;
                 direction: ltr;
                 gap: 2rem;
@@ -71,6 +76,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header Navigation (Same as index but different active link) -->
@@ -80,7 +86,7 @@
                 <i data-lucide="gem" class="logo-icon"></i>
                 <a href="index.html">Silver</a>
             </div>
-            
+
             <nav class="nav-links">
 
                 <div class="dropdown">
@@ -92,7 +98,8 @@
                 </div>
                 <a href="services.html" class="active">Services</a>
                 <div class="dropdown">
-                    <a href="custom-jewelry.html">Custom Design <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></a>
+                    <a href="custom-jewelry.html">Custom Design <i data-lucide="chevron-down"
+                            style="width: 16px; height: 16px;"></i></a>
                     <div class="dropdown-content">
                         <a href="portfolio.html">Portfolio</a>
                         <a href="testimonials.html">Testimonials</a>
@@ -101,7 +108,7 @@
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            
+
             <div class="nav-actions">
                 <button class="rtl-toggle" aria-label="Toggle RTL Layout">
                     <i data-lucide="languages"></i>
@@ -112,7 +119,7 @@
                 <a href="login.html" class="btn btn-outline btn-sm">Login</a>
                 <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
             </div>
-            
+
             <button class="mobile-menu-btn" aria-label="Menu">
                 <i data-lucide="menu"></i>
             </button>
@@ -126,30 +133,34 @@
         </button>
         <div class="mobile-nav-links">
             <div class="mobile-nav-item">
-                <a href="#" class="mobile-nav-toggle">Home <i data-lucide="chevron-down" class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
+                <a href="#" class="mobile-nav-toggle">Home <i data-lucide="chevron-down" class="mobile-nav-toggle-icon"
+                        style="width: 16px; height: 16px;"></i></a>
                 <div class="mobile-nav-submenu">
                     <a href="index.html">Home 1 (Classic)</a>
                     <a href="index-2.html">Home 2 (Premium)</a>
                 </div>
             </div>
-            
+
             <a href="services.html">Services</a>
-            
+
             <div class="mobile-nav-item">
-                <a href="#" class="mobile-nav-toggle">Custom Design <i data-lucide="chevron-down" class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
+                <a href="#" class="mobile-nav-toggle">Custom Design <i data-lucide="chevron-down"
+                        class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
                 <div class="mobile-nav-submenu">
                     <a href="portfolio.html">Portfolio</a>
                     <a href="testimonials.html">Testimonials</a>
                 </div>
             </div>
-            
+
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
-        
+
         <div class="mobile-nav-footer">
-            <a href="login.html" class="btn btn-outline" style="width: 100%; justify-content: center; display: flex;">Login</a>
-            <a href="signup.html" class="btn btn-primary" style="width: 100%; justify-content: center; display: flex;">Sign Up</a>
+            <a href="login.html" class="btn btn-outline"
+                style="width: 100%; justify-content: center; display: flex;">Login</a>
+            <a href="signup.html" class="btn btn-primary"
+                style="width: 100%; justify-content: center; display: flex;">Sign Up</a>
         </div>
     </div>
 
@@ -158,21 +169,25 @@
         <section class="page-header">
             <div class="container">
                 <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Expert Services</h1>
-                <p style="font-size: 1.125rem; max-width: 700px; margin: 0 auto;">Dedicated precision and careful restoration for your most valuable pieces.</p>
+                <p style="font-size: 1.125rem; max-width: 700px; margin: 0 auto;">Dedicated precision and careful
+                    restoration for your most valuable pieces.</p>
             </div>
         </section>
 
         <!-- Detailed Services -->
         <section class="section">
             <div class="container">
-                
+
                 <div class="service-detail">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800" alt="Professional Jewelry Repair" style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800"
+                            alt="Professional Jewelry Repair"
+                            style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                     </div>
                     <div class="service-content">
                         <h2>Jewelry Repair</h2>
-                        <p>We fix broken chains, mend clasps, and restructure damaged pieces so they can be worn safely once again. Each repair is treated to be invisible to the naked eye.</p>
+                        <p>We fix broken chains, mend clasps, and restructure damaged pieces so they can be worn safely
+                            once again. Each repair is treated to be invisible to the naked eye.</p>
                         <ul>
                             <li>Chain Soldering</li>
                             <li>Clasp Replacement</li>
@@ -184,11 +199,14 @@
 
                 <div class="service-detail">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&q=80&w=800" alt="High-Gloss Silver Polishing" style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&q=80&w=800"
+                            alt="High-Gloss Silver Polishing"
+                            style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                     </div>
                     <div class="service-content">
                         <h2>Silver Polishing</h2>
-                        <p>Over time, silver tarnishes and loses luster. We use professional-grade compounds and ultrasonic cleaning to carefully remove oxidation and restore a brilliant mirror finish.</p>
+                        <p>Over time, silver tarnishes and loses luster. We use professional-grade compounds and
+                            ultrasonic cleaning to carefully remove oxidation and restore a brilliant mirror finish.</p>
                         <ul>
                             <li>Deep Ultrasonic Cleaning</li>
                             <li>Tarnish Removal</li>
@@ -200,11 +218,14 @@
 
                 <div class="service-detail">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1584286595398-a59f21d313f5?auto=format&fit=crop&q=80&w=800" alt="Precision Ring Resizing" style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1584286595398-a59f21d313f5?auto=format&fit=crop&q=80&w=800"
+                            alt="Precision Ring Resizing"
+                            style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                     </div>
                     <div class="service-content">
                         <h2>Ring Resizing</h2>
-                        <p>Whether it's sizing up or down, we adjust rings perfectly to your finger size without compromising the structural integrity or the beauty of the band.</p>
+                        <p>Whether it's sizing up or down, we adjust rings perfectly to your finger size without
+                            compromising the structural integrity or the beauty of the band.</p>
                         <ul>
                             <li>Seamless Sizing Up/Down</li>
                             <li>Shank Replacement</li>
@@ -215,11 +236,14 @@
 
                 <div class="service-detail">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1617038166414-998bd936083c?auto=format&fit=crop&q=80&w=800" alt="Expert Stone Replacement" style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1617038166414-998bd936083c?auto=format&fit=crop&q=80&w=800"
+                            alt="Expert Stone Replacement"
+                            style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                     </div>
                     <div class="service-content">
                         <h2>Stone Replacement</h2>
-                        <p>Lost a diamond or colored gemstone? We source and expertly set matching replacement stones, ensuring a secure and beautiful fit.</p>
+                        <p>Lost a diamond or colored gemstone? We source and expertly set matching replacement stones,
+                            ensuring a secure and beautiful fit.</p>
                         <ul>
                             <li>Diamond Sourcing</li>
                             <li>Color Gemstone Matching</li>
@@ -232,10 +256,12 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="section" style="background: var(--surface-color); text-align: center; border-top: 1px solid var(--border-color);">
+        <section class="section"
+            style="background: var(--surface-color); text-align: center; border-top: 1px solid var(--border-color);">
             <div class="container">
                 <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Not sure what you need?</h2>
-                <p style="max-width: 600px; margin: 0 auto 2rem;">Bring your pieces to the workshop or send us a photo for a complimentary evaluation.</p>
+                <p style="max-width: 600px; margin: 0 auto 2rem;">Bring your pieces to the workshop or send us a photo
+                    for a complimentary evaluation.</p>
                 <a href="contact.html" class="btn btn-primary">Request an Evaluation</a>
             </div>
         </section>
@@ -250,13 +276,14 @@
                         <i data-lucide="gem" class="logo-icon"></i>
                         <a href="index.html">Silver</a>
                     </div>
-                    <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty and integrity of your finest silver jewelry with expert craftsmanship.</p>
+                    <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty
+                        and integrity of your finest silver jewelry with expert craftsmanship.</p>
                     <div style="display: flex; gap: 1rem;">
                         <a href="#" aria-label="Instagram" style="color: #fff;"><i data-lucide="instagram"></i></a>
                         <a href="#" aria-label="Facebook" style="color: #fff;"><i data-lucide="facebook"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul>
@@ -266,7 +293,7 @@
                         <li><a href="custom-jewelry.html">Custom Design</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Company</h3>
                     <ul>
@@ -275,18 +302,26 @@
                         <li><a href="testimonials.html">Testimonials</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Contact</h3>
                     <ul>
-                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square" style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a Message</a></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1 (555) 123-4567</span></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>hello@silversmith.com</span></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123 Artisan Ave,<br>Workshop District</span></li>
+                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square"
+                                style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a
+                                Message</a></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1
+                                (555) 123-4567</span></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i>
+                            <span>hello@silversmith.com</span></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123
+                                Artisan Ave,<br>Workshop District</span></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Silver. All Rights Reserved.</p>
                 <div>
@@ -307,4 +342,5 @@
     <script>lucide.createIcons();</script>
     <script src="../assets/js/main.js"></script>
 </body>
+
 </html>

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog & Insights | Silver</title>
-    
+
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/dark-mode.css">
-    <link rel="stylesheet" href="../assets/css/rtl.css">
-    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/dark-mode.css">
+    <link rel="stylesheet" href="/assets/css/rtl.css">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
 
     <style>
         .blog-grid {
@@ -30,24 +31,24 @@
 
         .blog-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         }
 
         body.dark-mode .blog-card:hover {
             border-color: var(--accent-color);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
         }
-        
+
         .blog-image {
             width: 100%;
             height: 240px;
             object-fit: cover;
         }
-        
+
         .blog-content {
             padding: 2rem;
         }
-        
+
         .blog-meta {
             display: flex;
             justify-content: space-between;
@@ -57,7 +58,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        
+
         .blog-title {
             font-size: 1.5rem;
             margin-bottom: 1rem;
@@ -74,6 +75,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header Navigation -->
@@ -83,7 +85,7 @@
                 <i data-lucide="gem" class="logo-icon"></i>
                 <a href="index.html">Silver</a>
             </div>
-            
+
             <nav class="nav-links">
 
                 <div class="dropdown">
@@ -95,7 +97,8 @@
                 </div>
                 <a href="services.html">Services</a>
                 <div class="dropdown">
-                    <a href="custom-jewelry.html">Custom Design <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></a>
+                    <a href="custom-jewelry.html">Custom Design <i data-lucide="chevron-down"
+                            style="width: 16px; height: 16px;"></i></a>
                     <div class="dropdown-content">
                         <a href="portfolio.html">Portfolio</a>
                         <a href="testimonials.html">Testimonials</a>
@@ -104,7 +107,7 @@
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            
+
             <div class="nav-actions">
                 <button class="rtl-toggle" aria-label="Toggle RTL Layout">
                     <i data-lucide="languages"></i>
@@ -115,8 +118,8 @@
                 <a href="login.html" class="btn btn-outline btn-sm">Login</a>
                 <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
             </div>
-            
-             <button class="mobile-menu-btn" aria-label="Menu">
+
+            <button class="mobile-menu-btn" aria-label="Menu">
                 <i data-lucide="menu"></i>
             </button>
         </div>
@@ -129,87 +132,102 @@
         </button>
         <div class="mobile-nav-links">
             <div class="mobile-nav-item">
-                <a href="#" class="mobile-nav-toggle">Home <i data-lucide="chevron-down" class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
+                <a href="#" class="mobile-nav-toggle">Home <i data-lucide="chevron-down" class="mobile-nav-toggle-icon"
+                        style="width: 16px; height: 16px;"></i></a>
                 <div class="mobile-nav-submenu">
                     <a href="index.html">Home 1 (Classic)</a>
                     <a href="index-2.html">Home 2 (Premium)</a>
                 </div>
             </div>
-            
+
             <a href="services.html">Services</a>
-            
+
             <div class="mobile-nav-item">
-                <a href="#" class="mobile-nav-toggle">Custom Design <i data-lucide="chevron-down" class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
+                <a href="#" class="mobile-nav-toggle">Custom Design <i data-lucide="chevron-down"
+                        class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
                 <div class="mobile-nav-submenu">
                     <a href="portfolio.html">Portfolio</a>
                     <a href="testimonials.html">Testimonials</a>
                 </div>
             </div>
-            
+
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
-        
+
         <div class="mobile-nav-footer">
-            <a href="login.html" class="btn btn-outline" style="width: 100%; justify-content: center; display: flex;">Login</a>
-            <a href="signup.html" class="btn btn-primary" style="width: 100%; justify-content: center; display: flex;">Sign Up</a>
+            <a href="login.html" class="btn btn-outline"
+                style="width: 100%; justify-content: center; display: flex;">Login</a>
+            <a href="signup.html" class="btn btn-primary"
+                style="width: 100%; justify-content: center; display: flex;">Sign Up</a>
         </div>
     </div>
 
     <main>
         <!-- Page Header -->
-        <section class="section" style="padding: 150px 0 50px; background-color: var(--surface-color); text-align: center; border-bottom: 1px solid var(--border-color);">
+        <section class="section"
+            style="padding: 150px 0 50px; background-color: var(--surface-color); text-align: center; border-bottom: 1px solid var(--border-color);">
             <div class="container">
                 <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Journal & Insights</h1>
-                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Articles on jewelry care, behind-the-scenes techniques, and silversmithing philosophy.</p>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Articles on jewelry care,
+                    behind-the-scenes techniques, and silversmithing philosophy.</p>
             </div>
         </section>
 
         <!-- Blog Grid Section -->
         <section class="section">
             <div class="container blog-grid">
-                
+
                 <article class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&q=80&w=800" alt="Polishing Silver" class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&q=80&w=800"
+                        alt="Polishing Silver" class="blog-image">
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span>Care & Maintenance</span>
                             <span>May 12, 2026</span>
                         </div>
                         <h3 class="blog-title"><a href="#">How to Keep Your Silver Jewelry Tarnish-Free at Home</a></h3>
-                        <p class="blog-excerpt">Tarnish is inevitable, but proper storage and cleaning techniques can vastly prolong the mirror-like shine of your silver necklaces and rings.</p>
-                        <a href="#" style="font-weight: 600; font-size: 0.875rem; text-transform: uppercase;">Read Article &rarr;</a>
+                        <p class="blog-excerpt">Tarnish is inevitable, but proper storage and cleaning techniques can
+                            vastly prolong the mirror-like shine of your silver necklaces and rings.</p>
+                        <a href="#" style="font-weight: 600; font-size: 0.875rem; text-transform: uppercase;">Read
+                            Article &rarr;</a>
                     </div>
                 </article>
 
                 <article class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1577908331566-6ec423d249f3?auto=format&fit=crop&q=80&w=800" alt="Silversmith Working" class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1577908331566-6ec423d249f3?auto=format&fit=crop&q=80&w=800"
+                        alt="Silversmith Working" class="blog-image">
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span>Craftsmanship</span>
                             <span>Apr 28, 2026</span>
                         </div>
                         <h3 class="blog-title"><a href="#">Behind the Forge: The Art of Invisible Soldering</a></h3>
-                        <p class="blog-excerpt">A broken chain is a tragedy, but saving it requires more than just melting silver. We explore how microscopes and micro-torches achieve flawless repairs.</p>
-                        <a href="#" style="font-weight: 600; font-size: 0.875rem; text-transform: uppercase;">Read Article &rarr;</a>
+                        <p class="blog-excerpt">A broken chain is a tragedy, but saving it requires more than just
+                            melting silver. We explore how microscopes and micro-torches achieve flawless repairs.</p>
+                        <a href="#" style="font-weight: 600; font-size: 0.875rem; text-transform: uppercase;">Read
+                            Article &rarr;</a>
                     </div>
                 </article>
 
                 <article class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1599643478524-fb524fa0a8c7?auto=format&fit=crop&q=80&w=800" alt="Custom Ring Sketch" class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1599643478524-fb524fa0a8c7?auto=format&fit=crop&q=80&w=800"
+                        alt="Custom Ring Sketch" class="blog-image">
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span>Design Ideas</span>
                             <span>Apr 15, 2026</span>
                         </div>
                         <h3 class="blog-title"><a href="#">From Sketch to Metal: The Custom Ring Journey</a></h3>
-                        <p class="blog-excerpt">Uncover the fascinating transition of how a simple pencil sketch transforms through wax-casting and hammering into a solid, wearable heirloom.</p>
-                        <a href="#" style="font-weight: 600; font-size: 0.875rem; text-transform: uppercase;">Read Article &rarr;</a>
+                        <p class="blog-excerpt">Uncover the fascinating transition of how a simple pencil sketch
+                            transforms through wax-casting and hammering into a solid, wearable heirloom.</p>
+                        <a href="#" style="font-weight: 600; font-size: 0.875rem; text-transform: uppercase;">Read
+                            Article &rarr;</a>
                     </div>
                 </article>
 
             </div>
-            
+
             <div style="text-align: center; margin-top: 4rem;">
                 <button class="btn btn-secondary">Load More</button>
             </div>
@@ -226,13 +244,14 @@
                         <i data-lucide="gem" class="logo-icon"></i>
                         <a href="index.html">Silver</a>
                     </div>
-                    <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty and integrity of your finest silver jewelry with expert craftsmanship.</p>
+                    <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty
+                        and integrity of your finest silver jewelry with expert craftsmanship.</p>
                     <div style="display: flex; gap: 1rem;">
                         <a href="#" aria-label="Instagram" style="color: #fff;"><i data-lucide="instagram"></i></a>
                         <a href="#" aria-label="Facebook" style="color: #fff;"><i data-lucide="facebook"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul>
@@ -242,7 +261,7 @@
                         <li><a href="custom-jewelry.html">Custom Design</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Company</h3>
                     <ul>
@@ -251,18 +270,26 @@
                         <li><a href="testimonials.html">Testimonials</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Contact</h3>
                     <ul>
-                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square" style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a Message</a></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1 (555) 123-4567</span></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>hello@silversmith.com</span></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123 Artisan Ave,<br>Workshop District</span></li>
+                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square"
+                                style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a
+                                Message</a></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1
+                                (555) 123-4567</span></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i>
+                            <span>hello@silversmith.com</span></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
+                                data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123
+                                Artisan Ave,<br>Workshop District</span></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Silver. All Rights Reserved.</p>
                 <div>
@@ -283,4 +310,5 @@
     <script>lucide.createIcons();</script>
     <script src="../assets/js/main.js"></script>
 </body>
+
 </html>

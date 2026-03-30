@@ -119,30 +119,38 @@
         </div>
     </header>
 
+    <!-- Mobile Navigation Overlay -->
     <div class="mobile-nav">
-        <!-- Reusing mobile nav from index for brevity -->
-        <button class="mobile-close"><i data-lucide="x"></i></button>
+        <button class="mobile-close" aria-label="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
         <div class="mobile-nav-links">
-            <a href="index.html">Home</a>
-            <a href="index.html" style="margin-left: 1rem; font-size: 1.1rem; color: var(--text-secondary);">- Home 1 (Classic)</a>
-            <a href="index-2.html" style="margin-left: 1rem; font-size: 1.1rem; color: var(--text-secondary);">- Home 2 (Premium)</a>
-
-            <div class="dropdown">
-                    <a href="index.html">Home <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></a>
-                    <div class="dropdown-content">
-                        <a href="index.html">Home 1 (Classic)</a>
-                        <a href="index-2.html">Home 2 (Premium)</a>
-                    </div>
+            <div class="mobile-nav-item">
+                <a href="#" class="mobile-nav-toggle">Home <i data-lucide="chevron-down" class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
+                <div class="mobile-nav-submenu">
+                    <a href="index.html">Home 1 (Classic)</a>
+                    <a href="index-2.html">Home 2 (Premium)</a>
                 </div>
-            <a href="services.html">Services</a>
-            <a href="custom-jewelry.html">Custom Design</a>
-            <a href="portfolio.html" style="margin-left: 1rem; font-size: 1.1rem; color: var(--text-secondary);">- Portfolio</a>
-            <a href="testimonials.html" style="margin-left: 1rem; font-size: 1.1rem; color: var(--text-secondary);">- Testimonials</a>
-            <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            <a href="blog.html">Blog</a>
             </div>
-        <button class="theme-toggle btn btn-secondary" style="width: auto;">Toggle Theme</button>
+            
+            <a href="services.html">Services</a>
+            
+            <div class="mobile-nav-item">
+                <a href="#" class="mobile-nav-toggle">Custom Design <i data-lucide="chevron-down" class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
+                <div class="mobile-nav-submenu">
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="testimonials.html">Testimonials</a>
+                </div>
+            </div>
+            
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <div class="mobile-nav-footer">
+            <a href="login.html" class="btn btn-outline" style="width: 100%; justify-content: center; display: flex;">Login</a>
+            <a href="signup.html" class="btn btn-primary" style="width: 100%; justify-content: center; display: flex;">Sign Up</a>
+        </div>
     </div>
 
     <main>
@@ -160,7 +168,7 @@
                 
                 <div class="service-detail">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb29?auto=format&fit=crop&q=80&w=800" alt="Jewelry Repair" style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800" alt="Professional Jewelry Repair" style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                     </div>
                     <div class="service-content">
                         <h2>Jewelry Repair</h2>
@@ -176,7 +184,7 @@
 
                 <div class="service-detail">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&q=80&w=800" alt="Silver Polishing" style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&q=80&w=800" alt="High-Gloss Silver Polishing" style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                     </div>
                     <div class="service-content">
                         <h2>Silver Polishing</h2>
@@ -192,7 +200,7 @@
 
                 <div class="service-detail">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1629853906660-31eeb36e65a5?auto=format&fit=crop&q=80&w=800" alt="Ring Resizing" style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1584286595398-a59f21d313f5?auto=format&fit=crop&q=80&w=800" alt="Precision Ring Resizing" style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                     </div>
                     <div class="service-content">
                         <h2>Ring Resizing</h2>
@@ -207,7 +215,7 @@
 
                 <div class="service-detail">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1588629555138-0cb93a2b7f05?auto=format&fit=crop&q=80&w=800" alt="Stone Replacement" style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1617038166414-998bd936083c?auto=format&fit=crop&q=80&w=800" alt="Expert Stone Replacement" style="border-radius: var(--border-radius); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                     </div>
                     <div class="service-content">
                         <h2>Stone Replacement</h2>
@@ -271,10 +279,10 @@
                 <div class="footer-col">
                     <h3>Contact</h3>
                     <ul>
-                        <li><a href="contact.html">Send a Message</a></li>
-                        <li style="color: #a0a0a0;">+1 (555) 123-4567</li>
-                        <li style="color: #a0a0a0;">hello@silversmith.com</li>
-                        <li style="color: #a0a0a0;">123 Artisan Ave,<br>Workshop District</li>
+                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square" style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a Message</a></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1 (555) 123-4567</span></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>hello@silversmith.com</span></li>
+                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123 Artisan Ave,<br>Workshop District</span></li>
                     </ul>
                 </div>
             </div>

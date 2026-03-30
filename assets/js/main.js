@@ -14,6 +14,28 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileClose.addEventListener('click', () => {
             mobileNav.classList.remove('active');
         });
+
+        // Mobile Submenu Toggles
+        const mobileToggles = document.querySelectorAll('.mobile-nav-toggle');
+        mobileToggles.forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                const submenu = toggle.nextElementSibling;
+                const icon = toggle.querySelector('.mobile-nav-toggle-icon');
+                
+                // Toggle current
+                toggle.classList.toggle('is-open');
+                if (submenu) submenu.classList.toggle('is-open');
+                
+                // Close others (Optional: Accordion behavior)
+                // mobileToggles.forEach(other => {
+                //     if (other !== toggle) {
+                //         other.classList.remove('is-open');
+                //         if (other.nextElementSibling) other.nextElementSibling.classList.remove('is-open');
+                //     }
+                // });
+            });
+        });
     }
 
     /* --- Dark Mode Toggle --- */

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Silver</title>
+    <meta name="description" content="Premium silversmith specializing in custom silver jewelry design and expert jewelry repair services.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+</head>
+<body>
+
+        <main>
+        <section class="account-section">
+            <div class="account-card reveal-up">
+                <div class="account-card-actions">
+                    <button class="rtl-toggle" aria-label="Toggle RTL Layout"><i data-lucide="languages"></i></button>
+                    <button class="theme-toggle" aria-label="Toggle Dark Mode"><i data-lucide="moon"></i></button>
+                </div>
+                <div class="account-header">
+                    <div class="logo" style="justify-content: center; margin-bottom: 1.5rem;">
+                        <i data-lucide="gem" class="logo-icon"></i>
+                        <a href="index.html">Silver</a>
+                    </div>
+                    <h1>Welcome Back</h1>
+                    <p style="color: var(--text-secondary);">Access your custom orders and favorites.</p>
+                </div>
+                
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <label for="password">Password</label>
+                            <a href="#" style="font-size: 0.75rem; font-weight: 500; color: var(--accent-color);">Forgot Password?</a>
+                        </div>
+                        <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+                    </div>
+                    
+                    <div class="form-group" style="display: flex; align-items: center; gap: 0.5rem; margin-top: -0.5rem;">
+                        <input type="checkbox" id="remember" style="cursor: pointer;">
+                        <label for="remember" style="margin-bottom: 0; cursor: pointer; font-size: 0.8125rem;">Remember me</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Sign In</button>
+                    
+                    <div class="form-footer">
+                        Don't have an account? <a href="signup.html">Create an Account</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

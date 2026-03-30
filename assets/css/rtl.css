@@ -1,0 +1,38 @@
+/* RTL Styles for Arabic/Hebrew (Optional) */
+html[dir="rtl"] {
+  /* Typical flips for RTL designs */
+}
+
+html[dir="rtl"] .logo {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-links a::after {
+  right: 0;
+  left: auto;
+}
+
+html[dir="rtl"] .hero-grid {
+  direction: rtl;
+}
+
+html[dir="rtl"] .mobile-nav {
+  right: auto;
+  left: -100%;
+  box-shadow: 10px 0 30px rgba(0,0,0,0.05);
+}
+
+html[dir="rtl"] .mobile-nav.active {
+  left: 0;
+  right: auto;
+}
+
+html[dir="rtl"] .mobile-close {
+  right: auto;
+  left: 20px;
+}
+
+html[dir="rtl"] .whatsapp-float {
+  right: auto;
+  left: 30px;
+}

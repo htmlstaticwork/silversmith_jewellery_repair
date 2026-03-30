@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Silver</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+
+    <style>
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--surface-color);
+            padding: 3rem 2rem;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+        
+        .testimonial-card .quote-icon {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            color: var(--border-color);
+            opacity: 0.5;
+            width: 48px;
+            height: 48px;
+        }
+        
+        .testimonial-card p {
+            font-size: 1.125rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .testimonial-author h4 {
+            margin-bottom: 0;
+            font-family: var(--font-body);
+            font-size: 1rem;
+        }
+        
+        .testimonial-author span {
+            font-size: 0.875rem;
+            color: var(--accent-color);
+        }
+        
+        .stars {
+            color: #fbbf24;
+            display: flex;
+            margin-bottom: 1rem;
+        }
+        .stars i {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <i data-lucide="gem" class="logo-icon"></i>
+                <a href="index.html">Silver</a>
+            </div>
+            
+            <nav class="nav-links">
+
+                <div class="dropdown">
+                    <a href="index.html">Home <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home 1 (Classic)</a>
+                        <a href="index-2.html">Home 2 (Premium)</a>
+                    </div>
+                </div>
+                <a href="services.html">Services</a>
+                <div class="dropdown">
+                    <a href="custom-jewelry.html" class="active">Custom Design <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="testimonials.html">Testimonials</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="rtl-toggle" aria-label="Toggle RTL Layout">
+                    <i data-lucide="languages"></i>
+                </button>
+                <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i data-lucide="moon"></i>
+                </button>
+                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+            </div>
+            
+             <button class="mobile-menu-btn" aria-label="Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <!-- Reusing mobile nav from index for brevity -->
+        <button class="mobile-close"><i data-lucide="x"></i></button>
+        <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html" style="margin-left: 1rem; font-size: 1.1rem; color: var(--text-secondary);">- Home 1 (Classic)</a>
+            <a href="index-2.html" style="margin-left: 1rem; font-size: 1.1rem; color: var(--text-secondary);">- Home 2 (Premium)</a>
+
+            <div class="dropdown">
+                    <a href="index.html">Home <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home 1 (Classic)</a>
+                        <a href="index-2.html">Home 2 (Premium)</a>
+                    </div>
+                </div>
+            <a href="services.html">Services</a>
+            <a href="custom-jewelry.html">Custom Design</a>
+            <a href="portfolio.html" style="margin-left: 1rem; font-size: 1.1rem; color: var(--text-secondary);">- Portfolio</a>
+            <a href="testimonials.html" style="margin-left: 1rem; font-size: 1.1rem; color: var(--text-secondary);">- Testimonials</a>
+            <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+            </div>
+        <button class="theme-toggle btn btn-secondary" style="width: auto;">Toggle Theme</button>
+    </div>
+
+
+    <main>
+        <!-- Page Header -->
+        <section class="section" style="padding: 150px 0 50px; background-color: var(--surface-color); text-align: center; border-bottom: 1px solid var(--border-color);">
+            <div class="container">
+                <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Client Stories</h1>
+                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Don't just take our word for it. Read what our clients say about entrusting us with their most valuable jewelry.</p>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section">
+            <div class="container testimonials-grid">
+                
+                <div class="testimonial-card">
+                    <i data-lucide="quote" class="quote-icon"></i>
+                    <div class="stars">
+                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                    </div>
+                    <p>"I brought in my grandmother's tarnished and broken silver locket. honestly, I thought it was ruined. When I picked it up, I cried. It looked exactly as I remembered it from my childhood. The repair is completely invisible."</p>
+                    <div class="testimonial-author">
+                        <div>
+                            <h4>Eleanor V.</h4>
+                            <span>Heirloom Restoration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <i data-lucide="quote" class="quote-icon"></i>
+                    <div class="stars">
+                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                    </div>
+                    <p>"I wanted a custom silver signet ring with my family crest. The process from sketch to the final piece was incredible and deeply personal. The weight and the polished finish of the ring feel so premium. Worth every penny."</p>
+                    <div class="testimonial-author">
+                        <div>
+                            <h4>James M.</h4>
+                            <span>Custom Design Client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <i data-lucide="quote" class="quote-icon"></i>
+                    <div class="stars">
+                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                    </div>
+                    <p>"My favorite silver chain snapped and the clasp broke. I brought it here after another jeweler said they couldn't solder it without making it stiff. They fixed it beautifully and it moves perfectly. Excellent craftsmanship."</p>
+                    <div class="testimonial-author">
+                        <div>
+                            <h4>Sarah L.</h4>
+                            <span>Chain Repair</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <i data-lucide="quote" class="quote-icon"></i>
+                    <div class="stars">
+                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                    </div>
+                    <p>"They expertly resized my silver engagement ring down two sizes. There is no line, no weakness in the band. It's like magic. And they polished it up so it looks brand new!"</p>
+                    <div class="testimonial-author">
+                        <div>
+                            <h4>Jessica T.</h4>
+                            <span>Ring Resizing</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="section" style="background: var(--text-primary); color: var(--bg-color); text-align: center;">
+            <div class="container">
+                <h2 style="color: var(--bg-color); font-size: 2.5rem; margin-bottom: 1rem;">Experience the Quality Yourself</h2>
+                <a href="contact.html" class="btn" style="background: var(--bg-color); color: var(--text-primary); margin-top: 1rem;">Get in Touch</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Simple -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i data-lucide="gem" class="logo-icon"></i>
+                        <a href="index.html">Silver</a>
+                    </div>
+                    <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty and integrity of your finest silver jewelry with expert craftsmanship.</p>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="#" aria-label="Instagram" style="color: #fff;"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Facebook" style="color: #fff;"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Jewelry Repair</a></li>
+                        <li><a href="services.html">Silver Polishing</a></li>
+                        <li><a href="services.html">Ring Resizing</a></li>
+                        <li><a href="custom-jewelry.html">Custom Design</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="contact.html">Send a Message</a></li>
+                        <li style="color: #a0a0a0;">+1 (555) 123-4567</li>
+                        <li style="color: #a0a0a0;">hello@silversmith.com</li>
+                        <li style="color: #a0a0a0;">123 Artisan Ave,<br>Workshop District</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Silver. All Rights Reserved.</p>
+                <div>
+                    <a href="#" style="margin-right: 1rem;">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" aria-label="Scroll to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

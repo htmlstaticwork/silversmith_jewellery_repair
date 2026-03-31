@@ -33,21 +33,7 @@
             z-index: 2;
         }
 
-        .about-image::before {
-            content: '';
-            position: absolute;
-            top: -20px;
-            left: -20px;
-            right: 20px;
-            bottom: 20px;
-            border: 2px solid var(--accent-light);
-            border-radius: var(--border-radius);
-            z-index: 1;
-        }
 
-        body.dark-mode .about-image::before {
-            border-color: var(--border-color);
-        }
 
         @media (max-width: 768px) {
             .about-grid {
@@ -145,13 +131,11 @@
     </div>
 
     <main>
-        <!-- Page Header -->
-        <section class="section"
-            style="padding: 150px 0 50px; background-color: var(--surface-color); text-align: center; border-bottom: 1px solid var(--border-color);">
-            <div class="container">
-                <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">The Artisan's Journey</h1>
-                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Dedicated to preserving the heritage
-                    of traditional silversmithing through unparalleled craftsmanship.</p>
+        <!-- Page Hero -->
+        <section class="page-hero reveal-up" style="background-image: url('assets/images/about_hero_bg.png');">
+            <div class="container text-center">
+                <h1 class="premium-title">Our Heritage</h1>
+                <p>Three generations of master-level craftsmanship and legacy, preserving the soul of fine silversmithing.</p>
             </div>
         </section>
 
@@ -160,11 +144,11 @@
             <div class="container about-grid">
 
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1577908331566-6ec423d249f3?auto=format&fit=crop&q=80&w=800"
-                        alt="Master Silversmith Working">
+                    <img src="assets/images/about_silversmith.png"
+                        alt="Master Silversmith Working" style="border-radius: var(--border-radius); box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                 </div>
 
-                <div>
+                <div style="text-align: center;">
                     <span class="section-subtitle">Our Heritage</span>
                     <h2>A legacy forged in silver and passion.</h2>
                     <p>With over two decades spent mastering the art of the forge, anvil, and polishing wheel, our
@@ -177,7 +161,7 @@
                         focus remains the same: uncompromising quality and a commitment to doing things the right way,
                         by hand.</p>
 
-                    <div style="margin-top: 2rem; display: flex; gap: 2rem;">
+                    <div style="margin-top: 2rem; display: flex; gap: 3rem; justify-content: center;">
                         <div>
                             <h3
                                 style="font-family: var(--font-body); font-size: 2.5rem; color: var(--accent-color); margin-bottom: 0;">
@@ -208,20 +192,20 @@
                     that enters our workshop not merely as an object, but as a priceless memory entrusted to our care.
                 </p>
 
-                <div class="services-grid" style="text-align: left;">
-                    <div class="service-card" style="box-shadow: none; border-color: transparent; text-align: center;">
+                <div class="services-grid">
+                    <div class="service-card" style="text-align: center;">
                         <div class="service-icon"><i data-lucide="shield"></i></div>
                         <h3>Integrity</h3>
                         <p>We use only the finest, responsibly sourced silver and employ techniques that strengthen
                             rather than weaken your jewelry.</p>
                     </div>
-                    <div class="service-card" style="box-shadow: none; border-color: transparent; text-align: center;">
+                    <div class="service-card" style="text-align: center;">
                         <div class="service-icon"><i data-lucide="eye"></i></div>
                         <h3>Precision</h3>
                         <p>Our repairs are executed precisely under magnification so they remain invisible to the naked
                             eye.</p>
                     </div>
-                    <div class="service-card" style="box-shadow: none; border-color: transparent; text-align: center;">
+                    <div class="service-card" style="text-align: center;">
                         <div class="service-icon"><i data-lucide="heart"></i></div>
                         <h3>Trust</h3>
                         <p>Your heirlooms are securely stored and comprehensively insured while in our workshop. You can
@@ -231,7 +215,59 @@
             </div>
         </section>
 
+        <!-- Meet the Artisans Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header portfolio-section-header">
+                    <div style="text-align: center; width: 100%;">
+                        <span class="section-subtitle">Our People</span>
+                        <h2 class="section-title">Meet the Artisans</h2>
+                        <p style="margin: 0 auto; max-width: 600px;">The dedicated hands and creative minds preserving the legacy of traditional bespoke silversmithing.</p>
+                    </div>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-card reveal-up">
+                        <img src="assets/images/artisan_theodore.png" alt="Master Silversmith">
+                        <h3>Theodore</h3>
+                        <p>Master Silversmith</p>
+                    </div>
+                    <div class="team-card reveal-up delay-200">
+                        <img src="assets/images/artisan_elena.png" alt="Head of Restoration">
+                        <h3>Elena</h3>
+                        <p>Head of Restoration</p>
+                    </div>
+                    <div class="team-card reveal-up delay-400">
+                        <img src="assets/images/artisan_marcus.png" alt="Lead Designer">
+                        <h3>Marcus</h3>
+                        <p>Lead Designer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Benefit Bar Section -->
+    <section class="benefit-bar">
+        <div class="container benefit-grid">
+            <div class="benefit-item">
+                <i data-lucide="hammer" class="benefit-icon"></i>
+                <h3>Master Craftsmanship</h3>
+                <p>Our silversmiths bring generations of expertise to every single piece we create.</p>
+            </div>
+            <div class="benefit-item">
+                <i data-lucide="gem" class="benefit-icon"></i>
+                <h3>Premium 925 Silver</h3>
+                <p>Only the highest quality ethically sourced sterling silver and gemstones.</p>
+            </div>
+            <div class="benefit-item">
+                <i data-lucide="sparkles" class="benefit-icon"></i>
+                <h3>Lifetime Care</h3>
+                <p>We stand behind our work with a lifetime professional polishing guarantee.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer Simple -->
     <footer>
@@ -244,9 +280,16 @@
                     </div>
                     <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty
                         and integrity of your finest silver jewelry with expert craftsmanship.</p>
-                    <div style="display: flex; gap: 1rem;">
-                        <a href="#" aria-label="Instagram" style="color: #fff;"><i data-lucide="instagram"></i></a>
-                        <a href="#" aria-label="Facebook" style="color: #fff;"><i data-lucide="facebook"></i></a>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-1 1-2 1a2 2 0 0 0-3 0 2 2 0 0 0 0 4l0 1c-5 0-9-4-11-8a1 1 0 0 0-2 1v1c0 5 4 8 8 10-3 1-7 2-10 1a1 1 0 0 0-1 1 1 1 0 0 0 1 1c10 2 18-4 18-12l0-1a1 1 0 0 0 1-1z"></path></svg>
+                        </a>
                     </div>
                 </div>
 

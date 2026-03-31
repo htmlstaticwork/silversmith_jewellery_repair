@@ -37,16 +37,27 @@ body.dark-mode header {
 }
 
 /* Service Card adjustments */
-body.dark-mode .service-card {
+body.dark-mode .service-card,
+body.dark-mode .benefit-item {
   background-color: var(--surface-color);
   border-color: var(--border-color);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
-body.dark-mode .service-card:hover {
+body.dark-mode .service-card:hover,
+body.dark-mode .benefit-item:hover {
   border-color: var(--accent-color);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
+
+body.dark-mode .service-card a {
+  color: #ffffff;
+}
+
+body.dark-mode .service-card a:hover {
+  color: var(--accent-color);
+}
+
 
 /* Ba-slider adjustments */
 body.dark-mode .ba-container {
@@ -59,6 +70,33 @@ body.dark-mode .mobile-nav {
 }
 
 body.dark-mode footer {
-  background-color: #0a0a0a;
+  background-color: #000000;
   border-top: 1px solid var(--border-color);
+  color: #a0a0a0;
+}
+
+body.dark-mode .footer-brand .logo a,
+body.dark-mode .footer-brand .logo-icon,
+body.dark-mode .footer-col h3 {
+  color: #ffffff;
+}
+
+body.dark-mode .footer-col a {
+  color: #a0a0a0;
+}
+
+body.dark-mode .footer-col a:hover {
+  color: #ffffff;
+}
+
+body.dark-mode .footer-bottom {
+  border-top: 1px solid #222;
+}
+
+body.dark-mode .footer-bottom a {
+  color: #a0a0a0;
+}
+
+body.dark-mode .footer-bottom a:hover {
+  color: #ffffff;
 }

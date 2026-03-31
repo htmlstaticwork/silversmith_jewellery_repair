@@ -17,8 +17,20 @@
     <style>
         .testimonials-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .testimonial-card {
@@ -27,6 +39,11 @@
             border-radius: var(--border-radius);
             border: 1px solid var(--border-color);
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center children horizontally */
+            text-align: center; /* Center text lines */
+            height: 100%;
         }
 
         .testimonial-card .quote-icon {
@@ -40,17 +57,21 @@
         }
 
         .testimonial-card p {
-            font-size: 1.125rem;
+            font-size: 1rem;
+            line-height: 1.6;
             font-style: italic;
             margin-bottom: 2rem;
             position: relative;
             z-index: 2;
+            flex-grow: 1;
         }
 
         .testimonial-author {
             display: flex;
+            flex-direction: column; /* Stack avatar above text */
             align-items: center;
-            gap: 1rem;
+            gap: 0.75rem;
+            margin-top: auto;
         }
 
         .testimonial-author img {
@@ -58,6 +79,7 @@
             height: 50px;
             border-radius: 50%;
             object-fit: cover;
+            border: 2px solid var(--border-color);
         }
 
         .testimonial-author h4 {
@@ -69,18 +91,21 @@
         .testimonial-author span {
             font-size: 0.875rem;
             color: var(--accent-color);
+            display: block;
         }
 
         .stars {
             color: #fbbf24;
             display: flex;
+            justify-content: center; /* Center stars */
             margin-bottom: 1rem;
+            gap: 2px;
         }
 
         .stars i {
             width: 16px;
             height: 16px;
-            fill: currentColor;
+            fill: #fbbf24; /* Ensure stars are FILLED */
         }
     </style>
 </head>
@@ -173,13 +198,11 @@
     </div>
 
     <main>
-        <!-- Page Header -->
-        <section class="section"
-            style="padding: 150px 0 50px; background-color: var(--surface-color); text-align: center; border-bottom: 1px solid var(--border-color);">
-            <div class="container">
-                <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Client Stories</h1>
-                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">Don't just take our word for it. Read
-                    what our clients say about entrusting us with their most valuable jewelry.</p>
+        <!-- Page Hero -->
+        <section class="page-hero reveal-up" style="background-image: url('assets/images/testimonials_hero_bg.png');">
+            <div class="container text-center">
+                <h1 class="premium-title">Client Stories</h1>
+                <p>Real experiences from our most valued patrons, sharing the joy of restored treasures and bespoke silver masterpieces.</p>
             </div>
         </section>
 
@@ -190,13 +213,14 @@
                 <div class="testimonial-card">
                     <i data-lucide="quote" class="quote-icon"></i>
                     <div class="stars">
-                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
-                            data-lucide="star"></i><i data-lucide="star"></i>
+                        <i data-lucide="star" fill="#fbbf24"></i><i data-lucide="star" fill="#fbbf24"></i><i data-lucide="star" fill="#fbbf24"></i><i
+                            data-lucide="star" fill="#fbbf24"></i><i data-lucide="star" fill="#fbbf24"></i>
                     </div>
                     <p>"I brought in my grandmother's tarnished and broken silver locket. honestly, I thought it was
                         ruined. When I picked it up, I cried. It looked exactly as I remembered it from my childhood.
                         The repair is completely invisible."</p>
                     <div class="testimonial-author">
+                        <img src="assets/images/author_eleanor.png" alt="Eleanor V.">
                         <div>
                             <h4>Eleanor V.</h4>
                             <span>Heirloom Restoration</span>
@@ -207,13 +231,14 @@
                 <div class="testimonial-card">
                     <i data-lucide="quote" class="quote-icon"></i>
                     <div class="stars">
-                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
-                            data-lucide="star"></i><i data-lucide="star"></i>
+                        <i data-lucide="star" fill="#fbbf24"></i><i data-lucide="star" fill="#fbbf24"></i><i data-lucide="star" fill="#fbbf24"></i><i
+                            data-lucide="star" fill="#fbbf24"></i><i data-lucide="star" fill="#fbbf24"></i>
                     </div>
                     <p>"I wanted a custom silver signet ring with my family crest. The process from sketch to the final
                         piece was incredible and deeply personal. The weight and the polished finish of the ring feel so
                         premium. Worth every penny."</p>
                     <div class="testimonial-author">
+                        <img src="assets/images/author_james.png" alt="James M.">
                         <div>
                             <h4>James M.</h4>
                             <span>Custom Design Client</span>
@@ -224,13 +249,14 @@
                 <div class="testimonial-card">
                     <i data-lucide="quote" class="quote-icon"></i>
                     <div class="stars">
-                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
-                            data-lucide="star"></i><i data-lucide="star"></i>
+                        <i data-lucide="star" fill="#fbbf24"></i><i data-lucide="star" fill="#fbbf24"></i><i data-lucide="star" fill="#fbbf24"></i><i
+                            data-lucide="star" fill="#fbbf24"></i><i data-lucide="star" fill="#fbbf24"></i>
                     </div>
                     <p>"My favorite silver chain snapped and the clasp broke. I brought it here after another jeweler
                         said they couldn't solder it without making it stiff. They fixed it beautifully and it moves
                         perfectly. Excellent craftsmanship."</p>
                     <div class="testimonial-author">
+                        <img src="assets/images/author_sarah.png" alt="Sarah L.">
                         <div>
                             <h4>Sarah L.</h4>
                             <span>Chain Repair</span>
@@ -241,12 +267,13 @@
                 <div class="testimonial-card">
                     <i data-lucide="quote" class="quote-icon"></i>
                     <div class="stars">
-                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i
-                            data-lucide="star"></i><i data-lucide="star"></i>
+                        <i data-lucide="star" fill="#fbbf24"></i><i data-lucide="star" fill="#fbbf24"></i><i data-lucide="star" fill="#fbbf24"></i><i
+                            data-lucide="star" fill="#fbbf24"></i><i data-lucide="star" fill="#fbbf24"></i>
                     </div>
                     <p>"They expertly resized my silver engagement ring down two sizes. There is no line, no weakness in
                         the band. It's like magic. And they polished it up so it looks brand new!"</p>
                     <div class="testimonial-author">
+                        <img src="assets/images/author_jessica.png" alt="Jessica T.">
                         <div>
                             <h4>Jessica T.</h4>
                             <span>Ring Resizing</span>
@@ -262,12 +289,32 @@
             <div class="container">
                 <h2 style="color: var(--bg-color); font-size: 2.5rem; margin-bottom: 1rem;">Experience the Quality
                     Yourself</h2>
-                <a href="contact.html" class="btn"
-                    style="background: var(--bg-color); color: var(--text-primary); margin-top: 1rem;">Get in Touch</a>
+                <a href="contact.html" class="btn btn-inverted" style="margin-top: 1rem;">Get in Touch</a>
             </div>
         </section>
 
     </main>
+
+        <!-- Benefit Bar Section -->
+        <section class="benefit-bar">
+            <div class="container benefit-grid">
+                <div class="benefit-item">
+                    <i data-lucide="hammer" class="benefit-icon"></i>
+                    <h3>Master Craftsmanship</h3>
+                    <p>Our silversmiths bring generations of expertise to every single piece we create.</p>
+                </div>
+                <div class="benefit-item">
+                    <i data-lucide="gem" class="benefit-icon"></i>
+                    <h3>Premium 925 Silver</h3>
+                    <p>Only the highest quality ethically sourced sterling silver and gemstones.</p>
+                </div>
+                <div class="benefit-item">
+                    <i data-lucide="sparkles" class="benefit-icon"></i>
+                    <h3>Lifetime Care</h3>
+                    <p>We stand behind our work with a lifetime professional polishing guarantee.</p>
+                </div>
+            </div>
+        </section>
 
     <!-- Footer Simple -->
     <footer>
@@ -280,9 +327,16 @@
                     </div>
                     <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty
                         and integrity of your finest silver jewelry with expert craftsmanship.</p>
-                    <div style="display: flex; gap: 1rem;">
-                        <a href="#" aria-label="Instagram" style="color: #fff;"><i data-lucide="instagram"></i></a>
-                        <a href="#" aria-label="Facebook" style="color: #fff;"><i data-lucide="facebook"></i></a>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-1 1-2 1a2 2 0 0 0-3 0 2 2 0 0 0 0 4l0 1c-5 0-9-4-11-8a1 1 0 0 0-2 1v1c0 5 4 8 8 10-3 1-7 2-10 1a1 1 0 0 0-1 1 1 1 0 0 0 1 1c10 2 18-4 18-12l0-1a1 1 0 0 0 1-1z"></path></svg>
+                        </a>
                     </div>
                 </div>
 

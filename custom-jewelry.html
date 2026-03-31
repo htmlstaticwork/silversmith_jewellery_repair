@@ -132,12 +132,11 @@
 
     <main>
         <!-- Page Header -->
-        <section class="section"
-            style="padding: 150px 0 50px; background-color: var(--surface-color); text-align: center; border-bottom: 1px solid var(--border-color);">
-            <div class="container">
-                <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">Bespoke Creations</h1>
-                <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto;">From a sparked idea to a wearable
-                    masterpiece. Discover our four-step custom design process.</p>
+        <!-- Page Hero -->
+        <section class="page-hero reveal-up" style="background-image: url('assets/images/custom_hero_bg.png');">
+            <div class="container text-center">
+                <h1 class="premium-title">Your Vision</h1>
+                <p>Transform your unique ideas into one-of-a-kind silver masterpieces with our dedicated bespoke design journey.</p>
             </div>
         </section>
 
@@ -193,25 +192,81 @@
                     <h2 class="section-title">Inspiration Gallery</h2>
                 </div>
 
-                <div class="portfolio-grid"
-                    style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
+                <div class="portfolio-grid">
 
                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1599643478524-fb524fa0a8c7?auto=format&fit=crop&q=80&w=600"
-                            alt="Idea 1">
+                        <img src="assets/images/portfolio_1_signet_ring.png"
+                            alt="Custom Signet Ring">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Custom Signet Ring</h3>
+                            <p>Hand-carved Silver</p>
+                        </div>
                     </div>
                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&q=80&w=600"
-                            alt="Idea 2">
+                        <img src="assets/images/portfolio_2_pearl_necklace.png"
+                            alt="Luxury Pearl Necklace">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Lustrous Pearl Strand</h3>
+                            <p>Premium Silver Rose Clasp</p>
+                        </div>
                     </div>
                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=600"
-                            alt="Idea 3">
+                        <img src="assets/images/portfolio_3_engraved_cuff.png"
+                            alt="Engraved Silver Cuff">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Modern Geometric Cuff</h3>
+                            <p>Precision Laser Etching</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio_4_heirloom_necklace.png"
+                            alt="Heirloom Silver Necklace">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Restored Filigree Piece</h3>
+                            <p>Sapphire Restoration</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio_5_onyx_ring.png"
+                            alt="Onyx Silver Ring">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Brutalist Onyx Ring</h3>
+                            <p>Hammered Silver Setting</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/portfolio_6_drop_earrings.png"
+                            alt="Art Nouveau Earrings">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Leaf Motif Drop Earrings</h3>
+                            <p>Blue Topaz Accents</p>
+                        </div>
                     </div>
                 </div>
 
                 <div style="text-align: center; margin-top: 3rem;">
                     <a href="contact.html" class="btn btn-primary">Schedule a Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefit Bar Section -->
+        <section class="benefit-bar">
+            <div class="container benefit-grid">
+                <div class="benefit-item">
+                    <i data-lucide="hammer" class="benefit-icon"></i>
+                    <h3>Master Craftsmanship</h3>
+                    <p>Our silversmiths bring generations of expertise to every single piece we create.</p>
+                </div>
+                <div class="benefit-item">
+                    <i data-lucide="gem" class="benefit-icon"></i>
+                    <h3>Premium 925 Silver</h3>
+                    <p>Only the highest quality ethically sourced sterling silver and gemstones.</p>
+                </div>
+                <div class="benefit-item">
+                    <i data-lucide="sparkles" class="benefit-icon"></i>
+                    <h3>Lifetime Care</h3>
+                    <p>We stand behind our work with a lifetime professional polishing guarantee.</p>
                 </div>
             </div>
         </section>
@@ -229,9 +284,16 @@
                     </div>
                     <p style="color: #666; max-width: 300px; margin-bottom: 1.5rem;">Dedicated to preserving the beauty
                         and integrity of your finest silver jewelry with expert craftsmanship.</p>
-                    <div style="display: flex; gap: 1rem;">
-                        <a href="#" aria-label="Instagram" style="color: #fff;"><i data-lucide="instagram"></i></a>
-                        <a href="#" aria-label="Facebook" style="color: #fff;"><i data-lucide="facebook"></i></a>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-1 1-2 1a2 2 0 0 0-3 0 2 2 0 0 0 0 4l0 1c-5 0-9-4-11-8a1 1 0 0 0-2 1v1c0 5 4 8 8 10-3 1-7 2-10 1a1 1 0 0 0-1 1 1 1 0 0 0 1 1c10 2 18-4 18-12l0-1a1 1 0 0 0 1-1z"></path></svg>
+                        </a>
                     </div>
                 </div>
 

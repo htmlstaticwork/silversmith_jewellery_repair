@@ -51,14 +51,14 @@
             </nav>
 
             <div class="nav-actions">
-                <button class="rtl-toggle" aria-label="Toggle RTL Layout">
-                    <i data-lucide="languages"></i>
-                </button>
+                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
                 <button class="theme-toggle" aria-label="Toggle Dark Mode">
                     <i data-lucide="moon"></i>
                 </button>
-                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
-                <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+                <button class="rtl-toggle" aria-label="Toggle RTL Layout">
+                    <i data-lucide="languages"></i>
+                </button>
             </div>
 
             <button class="mobile-menu-btn" aria-label="Menu">
@@ -207,16 +207,16 @@
                     <p style="max-width: 600px; margin: 1rem auto; font-size: 1.125rem;">A disciplined approach to silversmithing that ensures unparalleled precision from the first consultation to the final polish.</p>
                 </div>
                 
-                <div class="hover-group process-steps-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 4rem; position: relative;">
-                    <div class="reveal-up delay-100 process-card" style="text-align: center; padding: 2.5rem 2rem; border: 1px solid var(--border-color);">
+                <div class="hover-group" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem; margin-top: 4rem; position: relative;">
+                    <div class="reveal-up delay-100 process-card" style="flex: 1 1 300px; max-width: 450px; text-align: center; padding: 2.5rem 2rem; border: 1px solid var(--border-color);">
                         <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Discovery</h3>
                         <p style="color: #888;">Understanding your vision and assessing the intricacies of your silver piece.</p>
                     </div>
-                    <div class="reveal-up delay-200 process-card" style="text-align: center; padding: 2.5rem 2rem; border: 1px solid var(--border-color);">
+                    <div class="reveal-up delay-200 process-card" style="flex: 1 1 300px; max-width: 450px; text-align: center; padding: 2.5rem 2rem; border: 1px solid var(--border-color);">
                         <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">The Anvil</h3>
                         <p style="color: #888;">Applying decades of accumulated skill to repair, shape, and forge the metal.</p>
                     </div>
-                    <div class="reveal-up delay-300 process-card" style="text-align: center; padding: 2.5rem 2rem; border: 1px solid var(--border-color);">
+                    <div class="reveal-up delay-300 process-card" style="flex: 1 1 300px; max-width: 450px; text-align: center; padding: 2.5rem 2rem; border: 1px solid var(--border-color);">
                         <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Refinement</h3>
                         <p style="color: #888;">The meticulous hand-polishing phase that reveals the true brilliance of the silver.</p>
                     </div>
@@ -234,26 +234,41 @@
                 <div class="portfolio-grid hover-group" style="margin-top: 4rem;">
                     <div class="scale-up delay-100 testimonial-card" style="padding: 2rem; border: 1px solid var(--border-color); background: var(--surface-color); text-align: center;">
                         <i data-lucide="quote" style="width: 32px; height: 32px; color: var(--accent-color); margin: 0 auto 1rem; display: block; opacity: 0.5;"></i>
-                        <p style="font-style: italic; font-size: 1.125rem; margin-bottom: 2rem; line-height: 1.8;">"An absolutely transcendent level of craftsmanship. They took my fragmented heirloom and restored it beyond my wildest expectations."</p>
-                        <div>
-                            <h4 style="margin: 0; font-weight: 600;">Eleanor V.</h4>
-                            <span style="font-size: 0.875rem; color: #a0a0a0;">Collector</span>
+                        <p class="testimonial-text">"An absolutely transcendent level of craftsmanship. They took my fragmented heirloom and restored it beyond my wildest expectations."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150" alt="Eleanor V.">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Eleanor V.</h4>
+                                <span class="author-title">Collector</span>
+                            </div>
                         </div>
                     </div>
                     <div class="scale-up delay-200 testimonial-card" style="padding: 2rem; border: 1px solid var(--border-color); background: var(--surface-color); text-align: center;">
                         <i data-lucide="quote" style="width: 32px; height: 32px; color: var(--accent-color); margin: 0 auto 1rem; display: block; opacity: 0.5;"></i>
-                        <p style="font-style: italic; font-size: 1.125rem; margin-bottom: 2rem; line-height: 1.8;">"The bespoke silver cuff they designed for me is a masterpiece. I wear it daily, and it never fails to draw compliments."</p>
-                        <div>
-                            <h4 style="margin: 0; font-weight: 600;">Marcus D.</h4>
-                            <span style="font-size: 0.875rem; color: #a0a0a0;">Private Client</span>
+                        <p class="testimonial-text">"The bespoke silver cuff they designed for me is a masterpiece. I wear it daily, and it never fails to draw compliments."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="Marcus D.">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Marcus D.</h4>
+                                <span class="author-title">Private Client</span>
+                            </div>
                         </div>
                     </div>
                     <div class="scale-up delay-300 testimonial-card" style="padding: 2rem; border: 1px solid var(--border-color); background: var(--surface-color); text-align: center;">
                         <i data-lucide="quote" style="width: 32px; height: 32px; color: var(--accent-color); margin: 0 auto 1rem; display: block; opacity: 0.5;"></i>
-                        <p style="font-style: italic; font-size: 1.125rem; margin-bottom: 2rem; line-height: 1.8;">"Their deep understanding of silver properties and historical restoration techniques makes them unparalleled in the industry."</p>
-                        <div>
-                            <h4 style="margin: 0; font-weight: 600;">Sophia L.</h4>
-                            <span style="font-size: 0.875rem; color: #a0a0a0;">Jewelry Enthusiast</span>
+                        <p class="testimonial-text">"Their deep understanding of silver properties and historical restoration techniques makes them unparalleled in the industry."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150" alt="Sophia L.">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Sophia L.</h4>
+                                <span class="author-title">Jewelry Enthusiast</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -321,19 +336,30 @@
                 <div class="footer-col">
                     <h3>Contact</h3>
                     <ul>
-                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square"
-                                style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a
-                                Message</a></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
-                                data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1
-                                (555) 123-4567</span></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
-                                data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i>
-                            <span>hello@silversmith.com</span>
+                        <li>
+                            <a href="contact.html" class="footer-contact-link">
+                                <i data-lucide="message-square" style="width: 16px; height: 16px;"></i>
+                                <span>Send a Message</span>
+                            </a>
                         </li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
-                                data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123
-                                Artisan Ave,<br>Workshop District</span></li>
+                        <li>
+                            <a href="tel:+15551234567" class="footer-contact-link">
+                                <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:hello@silversmith.com" class="footer-contact-link">
+                                <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
+                                <span>hello@silversmith.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-contact-link">
+                                <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
+                                <span>123 Artisan Ave,<br>Workshop District</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

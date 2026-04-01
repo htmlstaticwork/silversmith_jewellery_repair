@@ -100,3 +100,36 @@ body.dark-mode .footer-bottom a {
 body.dark-mode .footer-bottom a:hover {
   color: #ffffff;
 }
+
+/* Account Page - Dark Mode Enhancements */
+body.dark-mode .account-card {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .form-footer a,
+body.dark-mode .form-group a {
+  color: var(--accent-color);
+}
+
+body.dark-mode .form-footer a:hover,
+body.dark-mode .form-group a:hover,
+body.dark-mode .forgot-password-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .forgot-password-link {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .account-card .social-link {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+body.dark-mode .account-card .social-link:hover {
+  background: #ffffff;
+  color: #000000 !important;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}

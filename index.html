@@ -51,14 +51,14 @@
             </nav>
 
             <div class="nav-actions">
-                <button class="rtl-toggle" aria-label="Toggle RTL Layout">
-                    <i data-lucide="languages"></i>
-                </button>
+                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
                 <button class="theme-toggle" aria-label="Toggle Dark Mode">
                     <i data-lucide="moon"></i>
                 </button>
-                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
-                <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+                <button class="rtl-toggle" aria-label="Toggle RTL Layout">
+                    <i data-lucide="languages"></i>
+                </button>
             </div>
 
             <button class="mobile-menu-btn" aria-label="Menu">
@@ -107,20 +107,16 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-decoration"></div>
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <span class="section-subtitle">Expert Silversmith</span>
-                    <h1>Restoring Memories,<br>Crafting Silver Masterpieces</h1>
-                    <p>Blending three generations of traditional craftsmanship with modern design to restore your cherished heirlooms and create breathtaking silver masterpieces.</p>
+        <section class="hero hero-bg" style="background-image: url('https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=1200');">
+            <div class="hero-overlay"></div>
+            <div class="container hero-container-centered">
+                <div class="hero-content-centered reveal-up">
+                    <span class="section-subtitle" style="color: var(--accent-light);">Expert Silversmith</span>
+                    <h1 style="color: #ffffff;">Restoring Memories,<br>Crafting Silver Masterpieces</h1>
+                    <p style="color: #e0e0e0;">Blending three generations of traditional craftsmanship with modern design to restore your cherished heirlooms and create breathtaking silver masterpieces.</p>
                     <div class="hero-actions">
-                        <a href="portfolio.html" class="btn btn-secondary">View Work</a>
+                        <a href="portfolio.html" class="btn btn-outline-white">View Work</a>
                     </div>
-                </div>
-                <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800"
-                        alt="Silversmith working on a piece of silver jewelry">
                 </div>
             </div>
         </section>
@@ -267,22 +263,22 @@
                     <h2 class="section-title">How It Works</h2>
                     <p>A simple, transparent process to ensure your jewelry receives the best care possible.</p>
                 </div>
-                <div class="services-grid hover-group" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-                    <div class="process-card" style="text-align: center; padding: 2rem; border-radius: var(--border-radius);">
+                <div class="hover-group" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+                    <div class="process-card" style="flex: 1 1 280px; max-width: 380px; text-align: center; padding: 2rem; border-radius: var(--border-radius);">
                         <div class="process-icon" style="width: 64px; height: 64px; background: var(--bg-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 1px solid var(--border-color); transition: all 0.3s ease;">
                             <span style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color); transition: all 0.3s ease;">1</span>
                         </div>
                         <h3>Consultation</h3>
                         <p>We assess your piece and discuss the best approach for repair, restoration, or custom design.</p>
                     </div>
-                    <div class="process-card" style="text-align: center; padding: 2rem; border-radius: var(--border-radius);">
+                    <div class="process-card" style="flex: 1 1 280px; max-width: 380px; text-align: center; padding: 2rem; border-radius: var(--border-radius);">
                         <div class="process-icon" style="width: 64px; height: 64px; background: var(--bg-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 1px solid var(--border-color); transition: all 0.3s ease;">
                             <span style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color); transition: all 0.3s ease;">2</span>
                         </div>
                         <h3>Crafting & Repair</h3>
                         <p>Our expert silversmiths begin the meticulous process of working on your jewelry with precision.</p>
                     </div>
-                    <div class="process-card" style="text-align: center; padding: 2rem; border-radius: var(--border-radius);">
+                    <div class="process-card" style="flex: 1 1 280px; max-width: 380px; text-align: center; padding: 2rem; border-radius: var(--border-radius);">
                         <div class="process-icon" style="width: 64px; height: 64px; background: var(--bg-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 1px solid var(--border-color); transition: all 0.3s ease;">
                             <span style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color); transition: all 0.3s ease;">3</span>
                         </div>
@@ -302,38 +298,62 @@
                     <p>Don't just take our word for it. Read what our satisfied clients have to say about our silver repair and custom design services.</p>
                 </div>
                 <div class="services-grid hover-group">
-                    <div class="service-card testimonial-card" style="text-align: center;">
-                        <div style="display: flex; justify-content: center; gap: 4px; color: var(--accent-color); margin-bottom: 1rem;">
+                    <div class="service-card testimonial-card" style="text-align: center; border: 1px solid var(--border-color); background: var(--surface-color); padding: 2rem;">
+                        <div style="display: flex; justify-content: center; gap: 4px; color: #fbbf24; margin-bottom: 1.5rem;">
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                         </div>
-                        <p style="font-style: italic; margin-bottom: 1rem;">"They entirely restored my grandmother's silver tea set. It looks as beautiful as the day she received it. Absolute masters of their craft!"</p>
-                        <h4 style="margin-bottom: 0;">— Sarah Jenkins</h4>
+                        <p class="testimonial-text">"They entirely restored my grandmother's silver tea set. It looks as beautiful as the day she received it. Absolute masters of their craft!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=150" alt="Sarah Jenkins">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Jenkins</h4>
+                                <span class="author-title">Client</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-card testimonial-card" style="text-align: center;">
-                        <div style="display: flex; justify-content: center; gap: 4px; color: var(--accent-color); margin-bottom: 1rem;">
+                    <div class="service-card testimonial-card" style="text-align: center; border: 1px solid var(--border-color); background: var(--surface-color); padding: 2rem;">
+                        <div style="display: flex; justify-content: center; gap: 4px; color: #fbbf24; margin-bottom: 1.5rem;">
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                         </div>
-                        <p style="font-style: italic; margin-bottom: 1rem;">"I brought in a custom design idea for a silver pendant, and they brought it to life perfectly. The attention to detail is unmatched."</p>
-                        <h4 style="margin-bottom: 0;">— Michael T.</h4>
+                        <p class="testimonial-text">"I brought in a custom design idea for a silver pendant, and they brought it to life perfectly. The attention to detail is unmatched."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150" alt="Michael T.">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Michael T.</h4>
+                                <span class="author-title">Collector</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-card testimonial-card" style="text-align: center;">
-                        <div style="display: flex; justify-content: center; gap: 4px; color: var(--accent-color); margin-bottom: 1rem;">
+                    <div class="service-card testimonial-card" style="text-align: center; border: 1px solid var(--border-color); background: var(--surface-color); padding: 2rem;">
+                        <div style="display: flex; justify-content: center; gap: 4px; color: #fbbf24; margin-bottom: 1.5rem;">
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                             <i data-lucide="star" style="fill: currentColor; width: 18px;"></i>
                         </div>
-                        <p style="font-style: italic; margin-bottom: 1rem;">"Fast, reliable, and incredibly skilled. My tarnished bracelets were polished so well they look brand new. Highly recommended."</p>
-                        <h4 style="margin-bottom: 0;">— Emily R.</h4>
+                        <p class="testimonial-text">"Fast, reliable, and incredibly skilled. My tarnished bracelets were polished so well they look brand new. Highly recommended."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150" alt="Emily R.">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Emily R.</h4>
+                                <span class="author-title">Jewelry Enthusiast</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -397,19 +417,30 @@
                 <div class="footer-col">
                     <h3>Contact</h3>
                     <ul>
-                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square"
-                                style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a
-                                Message</a></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
-                                data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1
-                                (555) 123-4567</span></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
-                                data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i>
-                            <span>hello@silversmith.com</span>
+                        <li>
+                            <a href="contact.html" class="footer-contact-link">
+                                <i data-lucide="message-square" style="width: 16px; height: 16px;"></i>
+                                <span>Send a Message</span>
+                            </a>
                         </li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
-                                data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123
-                                Artisan Ave,<br>Workshop District</span></li>
+                        <li>
+                            <a href="tel:+15551234567" class="footer-contact-link">
+                                <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:hello@silversmith.com" class="footer-contact-link">
+                                <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
+                                <span>hello@silversmith.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-contact-link">
+                                <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
+                                <span>123 Artisan Ave,<br>Workshop District</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -140,14 +140,14 @@
             </nav>
 
             <div class="nav-actions">
-                <button class="rtl-toggle" aria-label="Toggle RTL Layout">
-                    <i data-lucide="languages"></i>
-                </button>
+                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
                 <button class="theme-toggle" aria-label="Toggle Dark Mode">
                     <i data-lucide="moon"></i>
                 </button>
-                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
-                <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+                <button class="rtl-toggle" aria-label="Toggle RTL Layout">
+                    <i data-lucide="languages"></i>
+                </button>
             </div>
 
             <button class="mobile-menu-btn" aria-label="Menu">
@@ -377,19 +377,30 @@
                 <div class="footer-col">
                     <h3>Contact</h3>
                     <ul>
-                        <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="message-square"
-                                style="width: 16px; height: 16px; margin-top: 4px;"></i> <a href="contact.html">Send a
-                                Message</a></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
-                                data-lucide="phone" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>+1
-                                (555) 123-4567</span></li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
-                                data-lucide="mail" style="width: 16px; height: 16px; margin-top: 4px;"></i>
-                            <span>hello@silversmith.com</span>
+                        <li>
+                            <a href="contact.html" class="footer-contact-link">
+                                <i data-lucide="message-square" style="width: 16px; height: 16px;"></i>
+                                <span>Send a Message</span>
+                            </a>
                         </li>
-                        <li style="color: #a0a0a0; display: flex; align-items: flex-start; gap: 0.5rem;"><i
-                                data-lucide="map-pin" style="width: 16px; height: 16px; margin-top: 4px;"></i> <span>123
-                                Artisan Ave,<br>Workshop District</span></li>
+                        <li>
+                            <a href="tel:+15551234567" class="footer-contact-link">
+                                <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:hello@silversmith.com" class="footer-contact-link">
+                                <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
+                                <span>hello@silversmith.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-contact-link">
+                                <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
+                                <span>123 Artisan Ave,<br>Workshop District</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

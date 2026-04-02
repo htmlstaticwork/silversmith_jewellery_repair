@@ -104,6 +104,23 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 576px) {
+            .contact-info {
+                padding: 1.5rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
     </style>
 </head>
 
@@ -163,8 +180,7 @@
         </button>
         <div class="mobile-nav-links">
             <div class="mobile-nav-item">
-                <a href="#" class="mobile-nav-toggle">Home <i data-lucide="chevron-down" class="mobile-nav-toggle-icon"
-                        style="width: 16px; height: 16px;"></i></a>
+                <a href="index.html" class="mobile-nav-toggle">Home <i data-lucide="chevron-down" class="mobile-nav-toggle-icon"></i></a>
                 <div class="mobile-nav-submenu">
                     <a href="index.html">Home 1 (Classic)</a>
                     <a href="index-2.html">Home 2 (Premium)</a>
@@ -174,8 +190,8 @@
             <a href="about.html">About</a>
 
             <div class="mobile-nav-item">
-                <a href="#" class="mobile-nav-toggle">Custom Design <i data-lucide="chevron-down"
-                        class="mobile-nav-toggle-icon" style="width: 16px; height: 16px;"></i></a>
+                <a href="custom-jewelry.html" class="mobile-nav-toggle">Custom Design <i data-lucide="chevron-down"
+                        class="mobile-nav-toggle-icon"></i></a>
                 <div class="mobile-nav-submenu">
                     <a href="portfolio.html">Portfolio</a>
                     <a href="testimonials.html">Testimonials</a>
@@ -268,7 +284,7 @@
                         <h2 style="font-size: 2rem; margin-bottom: 2rem;">Send An Inquiry</h2>
 
                         <form class="contact-form" action="#" method="POST">
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div class="form-row">
                                 <div class="form-group">
                                     <label class="form-label" for="fname">First Name</label>
                                     <input type="text" id="fname" class="form-input" placeholder="Enter your first name"
@@ -408,7 +424,7 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Silver. All Rights Reserved.</p>
                 <div>
-                    <a href="#" style="margin-right: 1rem;">Privacy Policy</a>
+                    <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
                 </div>
             </div>

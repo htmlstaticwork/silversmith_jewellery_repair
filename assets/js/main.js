@@ -19,21 +19,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const mobileToggles = document.querySelectorAll('.mobile-nav-toggle');
         mobileToggles.forEach(toggle => {
             toggle.addEventListener('click', (e) => {
-                e.preventDefault();
                 const submenu = toggle.nextElementSibling;
-                const icon = toggle.querySelector('.mobile-nav-toggle-icon');
+                const isOpen = toggle.classList.contains('is-open');
+                const isIconClick = e.target.classList.contains('mobile-nav-toggle-icon') || 
+                                   e.target.closest('.mobile-nav-toggle-icon');
                 
-                // Toggle current
-                toggle.classList.toggle('is-open');
-                if (submenu) submenu.classList.toggle('is-open');
-                
-                // Close others (Optional: Accordion behavior)
-                // mobileToggles.forEach(other => {
-                //     if (other !== toggle) {
-                //         other.classList.remove('is-open');
-                //         if (other.nextElementSibling) other.nextElementSibling.classList.remove('is-open');
-                //     }
-                // });
+                // If it's closed, open it on first click (anywhere)
+                if (!isOpen) {
+                    e.preventDefault();
+                    toggle.classList.add('is-open');
+                    if (submenu) submenu.classList.add('is-open');
+                } 
+                // If it's open and the user clicks the ICON, close it.
+                // If they click the text, let it navigate.
+                else if (isIconClick) {
+                    e.preventDefault();
+                    toggle.classList.remove('is-open');
+                    if (submenu) submenu.classList.remove('is-open');
+                }
             });
         });
     }

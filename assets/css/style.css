@@ -193,6 +193,7 @@ img {
   justify-content: center;
   padding: var(--spacing-xl) var(--spacing-md);
   background-color: var(--bg-color);
+  position: relative;
 }
 
 .account-card {
@@ -212,6 +213,7 @@ img {
   inset-inline-end: 1.5rem;
   display: flex;
   gap: 0.75rem;
+  z-index: 1000;
 }
 
 .account-card-actions button {
@@ -265,21 +267,21 @@ img {
 
 .form-footer a {
   font-weight: 600;
-  color: var(--accent-light);
-  text-decoration: none;
+  color: var(--text-primary);
+  text-decoration: underline;
   transition: all var(--transition-fast);
 }
 
 .form-footer a:hover {
   color: var(--accent-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .forgot-password-link {
   font-size: 0.8125rem;
   font-weight: 500;
-  color: var(--accent-color);
-  text-decoration: none;
+  color: var(--text-secondary);
+  text-decoration: underline;
   transition: all var(--transition-fast);
 }
 
@@ -882,6 +884,17 @@ footer {
   font-size: 0.875rem;
 }
 
+.footer-bottom p {
+  margin-bottom: 0;
+}
+
+.footer-bottom div {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
 .footer-bottom a {
   color: var(--text-secondary);
   transition: color var(--transition-normal);
@@ -1430,7 +1443,14 @@ footer {
 
 .mobile-nav-toggle-icon {
   transition: transform 0.3s ease;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 20px;
+  height: 20px;
 }
+
 
 .mobile-nav-toggle.is-open .mobile-nav-toggle-icon {
   transform: rotate(180deg);

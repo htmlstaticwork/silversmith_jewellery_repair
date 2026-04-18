@@ -19,6 +19,12 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
+            align-items: stretch;
+        }
+
+        .page-hero {
+            background-position: center 25% !important;
+            padding: 12rem 0 8rem !important;
         }
 
         @media (max-width: 1024px) {
@@ -35,15 +41,24 @@
 
         .testimonial-card {
             background-color: var(--surface-color);
-            padding: 3rem 2rem;
+            padding: 4rem 2rem 3rem;
             border-radius: var(--border-radius);
             border: 1px solid var(--border-color);
+            border-top: 4px solid var(--accent-color);
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: center; /* Center children horizontally */
             text-align: center; /* Center text lines */
             height: 100%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+            transition: all var(--transition-normal);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            border-color: var(--accent-color);
         }
 
         .testimonial-card .quote-icon {
@@ -149,7 +164,7 @@
                     <i data-lucide="moon"></i>
                 </button>
                 <button class="rtl-toggle" aria-label="Toggle RTL Layout">
-                    <i data-lucide="languages"></i>
+                    <span style="font-size: 14px; font-weight: 600; letter-spacing: 1px;">RTL</span>
                 </button>
             </div>
 
